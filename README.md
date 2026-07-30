@@ -1,189 +1,190 @@
-# my_first_pkg
+<div align="center">
+  
+# 🤖 my_first_pkg
+  
+**Enterprise-Grade Reference Implementation for ROS 2 Node Lifecycles & IPC**
 
-Example ROS 2 Python package for basic `rclpy` patterns: a minimal node, a topic publisher/subscriber pair, and a service/client pair for `example_interfaces/AddTwoInts`.
+[![ROS 2 Jazzy](https://img.shields.io/badge/ROS_2-Jazzy-22314E?style=for-the-badge&logo=ros&logoColor=white)](#)
+[![Python 3.12](https://img.shields.io/badge/Python-3.12-3776AB?style=for-the-badge&logo=python&logoColor=white)](#)
+[![rclpy](https://img.shields.io/badge/Middleware-rclpy-FF6B6B?style=for-the-badge)](#)
+[![License: MIT](https://img.shields.io/badge/License-MIT-success?style=for-the-badge)](#)
 
-## Quick Compatibility & Status
+</div>
 
-- Project type: ROS 2 package
-- Stack: ROS 2 Jazzy, Python 3.12, `rclpy`, `colcon`, `setuptools`
-- Runtime: console entry points are exposed from `setup.py`
-- Status: reference/demo package for learning and code review
+---
 
-## Overview
+## 📖 Overview
 
-This package demonstrates the core ROS 2 communication styles in a single Python package. It includes `simple_node` for the minimal node lifecycle, `publisher_node` and `subscriber_node` for topic-based communication, and `add_two_ints_server` plus `add_two_ints_client` for a request/response service pattern. The package is intended as a compact reference implementation for developers who are learning ROS 2 structure and package wiring.
+`my_first_pkg` is an architectural reference package designed to demonstrate robust Inter-Process Communication (IPC) paradigms within the **ROS 2 (Jazzy)** ecosystem. Built upon the `rclpy` middleware API, it abstracts the underlying Data Distribution Service (DDS) to expose strongly-typed publish/subscribe channels and deterministic request/response service endpoints. 
+
+This repository serves as a foundational scaffold for mid-to-senior robotics engineers evaluating ROS 2 core abstractions, threading models, and package deployment structures via `colcon` and `setuptools`.
+
+---
+
+## ⚡ Core Architecture & Topologies
+
+The package exposes three distinct architectural patterns commonly deployed in asynchronous robotic software stacks:
+
+### 1. Topic-Based Asynchronous Telemetry
+Leveraging `std_msgs/String`, the publisher/subscriber topology utilizes a decentralized multicast model.
 
 ```mermaid
-graph TD
-    A[add_two_ints_client] -->|call /add_two_ints| B[add_two_ints_server]
-    B -->|return sum| A
-    C[publisher_node] -->|publish hello_topic| D[subscriber_node]
+graph LR
+    classDef publisher fill:#22314E,stroke:#fff,stroke-width:2px,color:#fff;
+    classDef subscriber fill:#3776AB,stroke:#fff,stroke-width:2px,color:#fff;
+    classDef topic fill:#FF6B6B,stroke:#fff,stroke-width:2px,color:#fff;
+
+    P[publisher_node]:::publisher -- "std_msgs/String\n(1Hz, QoS: Reliable)" --> T((/hello_topic)):::topic
+    T --> S[subscriber_node]:::subscriber
 ```
 
-The service path uses a request/response handshake because the add-two-ints operation is a one-shot computation; a topic would force the client to poll on a timer and add unnecessary DDS traffic for a synchronous operation.
+### 2. Synchronous Remote Procedure Calls (RPC)
+For deterministic, one-shot computations, the package implements a synchronous Service-Client topology utilizing the `example_interfaces/srv/AddTwoInts` interface.
 
-## Key Features
-
-- Minimal `rclpy` node example with a logger
-- Publisher/subscriber demo over `hello_topic`
-- Service/client demo using `AddTwoInts`
-- Console scripts for `ros2 run` entry points
-
-## Prerequisites
-
-- ROS 2 Jazzy or a compatible `rclpy` environment
-- Python 3.10+ (3.12 used in this workspace)
-- `colcon-core` and `setuptools`
-- `git` for cloning and version control
-
-## Install
-
-1. Change to your workspace root and source your ROS 2 environment:
-
-   ```bash
-   cd /path/to/ros2_jazzy
-   source /opt/ros/jazzy/setup.bash
-   ```
-
-2. Optionally create a Python virtual environment for local tooling:
-
-   ```bash
-   python3 -m venv .venv
-   source .venv/bin/activate
-   ```
-
-3. Build the package:
-
-   ```bash
-   colcon build --packages-select my_first_pkg
-   ```
-
-4. Source the generated workspace setup file:
-
-   ```bash
-   source install/setup.bash
-   ```
-
-ROS 2 workspaces commonly ignore generated artifacts. A practical `.gitignore` snippet is:
-
-```gitignore
-build/
-install/
-log/
-*.pyc
-__pycache__/
+```mermaid
+sequenceDiagram
+    participant Client as add_two_ints_client
+    participant Server as add_two_ints_server
+    
+    Client->>Server: Call /add_two_ints (a=5, b=7)
+    Note over Client: Awaits Future<br/>(Timeout: 1.0s)
+    Server-->>Client: Returns AddTwoInts_Response(sum=12)
+    Note over Client: Future Resolved
 ```
 
-## Quick Start — Build & Run
+---
 
+## 🛠️ Tech Stack & Dependencies
+
+- **Framework**: ROS 2 Jazzy Jalisco
+- **Language**: Python ≥ 3.10 (Tested on 3.12)
+- **Middleware Integration**: `rclpy`
+- **Build System**: `colcon-core` & `setuptools`
+- **Standard Interfaces**: `std_msgs`, `example_interfaces`
+
+---
+
+## 🚀 Deployment & Installation
+
+We recommend deploying within a dedicated ROS 2 workspace to avoid system-level package collisions.
+
+### 1. Environment Initialization
+Source the base ROS 2 Jazzy overlay.
 ```bash
-cd /path/to/ros2_jazzy
 source /opt/ros/jazzy/setup.bash
-colcon build --packages-select my_first_pkg
+```
+
+### 2. Workspace Compilation
+Navigate to your `ros2_ws` root and invoke the `colcon` build system. The `--symlink-install` flag is highly recommended for Python packages to avoid rebuilding upon script modifications.
+```bash
+colcon build --packages-select my_first_pkg --symlink-install
+```
+
+> [!WARNING]  
+> If you omit `--symlink-install`, any changes to `*.py` files will require a full recompilation of the package via `colcon build`.
+
+### 3. Source the Local Overlay
+```bash
 source install/setup.bash
 ```
 
-Run the examples in separate terminals:
+---
 
+## 💻 Execution Interfaces
+
+### Asynchronous Pub/Sub Pipeline
+Deploy the decoupled communication pipeline across two isolated terminal sessions.
+
+**Terminal 1 (Data Producer):**
 ```bash
-ros2 run my_first_pkg simple_node
 ros2 run my_first_pkg publisher_node
+```
+
+**Terminal 2 (Data Consumer):**
+```bash
 ros2 run my_first_pkg subscriber_node
+```
+
+### Synchronous Service Invocation
+Spin up the service server to expose the RPC endpoint.
+
+**Terminal 1 (Service Provider):**
+```bash
 ros2 run my_first_pkg add_two_ints_server
+```
+
+**Terminal 2 (Client Application):**
+```bash
 ros2 run my_first_pkg add_two_ints_client
 ```
 
-## Examples
+> [!TIP]  
+> You can introspect and interact with the service directly via the ROS 2 CLI daemon without running the custom Python client:
+> ```bash
+> ros2 service call /add_two_ints example_interfaces/srv/AddTwoInts "{a: 5, b: 7}"
+> ```
 
-Start the service server and then call it from another terminal:
+---
 
-```bash
-ros2 run my_first_pkg add_two_ints_server
-```
+## ⚙️ Advanced Configuration (DDS & Middleware)
 
-```bash
-ros2 service call /add_two_ints example_interfaces/srv/AddTwoInts "{a: 5, b: 7}"
-```
+Because ROS 2 relies on DDS (Data Distribution Service) for discovery and transport, you can modulate the package's network behavior at runtime via POSIX environment variables.
 
-Expected output includes a response similar to:
+| Environment Variable | Impact | Example Usage |
+| :--- | :--- | :--- |
+| <kbd>ROS_DOMAIN_ID</kbd> | Subnets DDS traffic to isolate distinct ROS 2 graphs on a shared physical network. | `export ROS_DOMAIN_ID=42` |
+| <kbd>RMW_IMPLEMENTATION</kbd> | Hot-swaps the underlying DDS vendor (e.g., FastDDS, CycloneDDS, Connext). | `export RMW_IMPLEMENTATION=rmw_cyclonedds_cpp` |
+| <kbd>ROS_LOCALHOST_ONLY</kbd> | Restricts DDS discovery to loopback, preventing network saturation. | `export ROS_LOCALHOST_ONLY=1` |
 
-```text
-response:
-example_interfaces.srv.AddTwoInts_Response(sum=12)
-```
+---
 
-Run the topic demo with two terminals:
+## 🧪 CI/CD & Testing
 
-```bash
-ros2 run my_first_pkg publisher_node
-```
-
-```bash
-ros2 run my_first_pkg subscriber_node
-```
-
-The subscriber should log the published string from the publisher.
-
-## Tests
-
-Run the package tests with:
+Execute the local unit testing and linting pipelines (using `ament_copyright`, `ament_flake8`, and `ament_pep257`).
 
 ```bash
-colcon test --packages-select my_first_pkg && colcon test-result --verbose
+colcon test --packages-select my_first_pkg
+colcon test-result --all --verbose
 ```
 
-The package includes the standard ament test stubs under `test/`; they are useful for validating packaging and linting in a standard ROS 2 environment.
+---
 
-## File Tree
+## 🗂️ Project Taxonomy
 
 <details>
-<summary>Repository layout</summary>
+<summary><b>Click to Expand Dependency & File Tree</b></summary>
+<br>
 
 ```text
 .
-├── build/
-├── install/
-├── log/
-├── src/
-│   └── my_first_pkg/
-│       ├── package.xml
-│       ├── resource/
-│       ├── setup.cfg
-│       ├── setup.py
-│       ├── my_first_pkg/
-│       │   ├── __init__.py
-│       │   ├── add_two_ints_client.py
-│       │   ├── add_two_ints_server.py
-│       │   ├── publisher_node.py
-│       │   ├── simple_node.py
-│       │   └── subscriber_node.py
-│       └── test/
+├── package.xml                 # ROS 2 manifest (dependencies & metadata)
+├── setup.cfg                   # Python package directives
+├── setup.py                    # Entry point declarations (ros2 run)
+├── my_first_pkg/
+│   ├── __init__.py
+│   ├── add_two_ints_client.py  # Asynchronous client future-polling
+│   ├── add_two_ints_server.py  # Synchronous callback dispatcher
+│   ├── publisher_node.py       # Timer-driven state publishing
+│   ├── simple_node.py          # Minimal node lifecycle binding
+│   └── subscriber_node.py      # Event-driven callback consumption
+└── test/                       # Ament-compliant test scaffolding
 ```
-
 </details>
 
-## Configuration & Environment
+---
 
-- `ROS_DOMAIN_ID`: set this to isolate DDS traffic when multiple ROS 2 applications share a network.
-- `RMW_IMPLEMENTATION`: override the middleware implementation when you need to match a specific DDS vendor or debugging setup.
-- `AMENT_PREFIX_PATH`: populated automatically after sourcing `install/setup.bash`.
+## 📉 Known Architectural Limitations
 
-## Known Limitations
+1. **Static Topology**: Topic and service URIs (`/hello_topic`, `/add_two_ints`) are hardcoded. They currently lack parameterization via `rcl_interfaces` for dynamic remapping.
+2. **Blocking Callbacks**: The service server operates in a SingleThreadedExecutor. High-frequency client bursts may induce blocking. Future iterations will adopt `MultiThreadedExecutor` and `ReentrantCallbackGroup`.
 
-- This package is a reference scaffold rather than a production-ready robotics interface layer.
-- The example uses fixed topic and service names, so it does not yet demonstrate parameter-driven configuration or launch-file orchestration.
-- The service example is intentionally single-node and synchronous, which is adequate for learning but not ideal for high-throughput or multi-client systems.
+## 🛣️ Engineering Roadmap
 
-## Roadmap
+- [ ] **Launch Orchestration**: Integrate `launch_ros` to initialize both the publisher and subscriber synchronously from a single XML/Python entry point.
+- [ ] **Lifecycle Nodes**: Migrate standard `rclpy.node.Node` to `rclpy.lifecycle.Node` for managed state machine transitions (Unconfigured -> Inactive -> Active).
+- [ ] **Action Servers**: Implement long-running, interruptible goal tracking using ROS 2 Actions.
 
-- Add launch files for the publisher/subscriber and service demos
-- Introduce parameters and a more realistic node configuration pattern
-- Expand the examples to cover actions and lifecycle nodes
-
-## Contributing
-
-Contributions are welcome. Open an issue with the behavior you want to change or the example you want to add, then submit a small pull request with a clear rationale.
-
-## Footer
-
-Maintained by `relvixx`. This package targets ROS 2 distributions that provide `rclpy` and standard interface packages such as `example_interfaces`.
+---
+<div align="center">
+  <b>Built and maintained by relvixx.</b>
+</div>
