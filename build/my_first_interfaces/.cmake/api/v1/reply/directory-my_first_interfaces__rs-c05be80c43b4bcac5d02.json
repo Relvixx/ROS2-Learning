@@ -1,0 +1,14 @@
+{
+	"backtraceGraph" : 
+	{
+		"commands" : [],
+		"files" : [],
+		"nodes" : []
+	},
+	"installers" : [],
+	"paths" : 
+	{
+		"build" : "my_first_interfaces__rs",
+		"source" : "/home/relvixx/ros2_jazzy/build/my_first_interfaces/my_first_interfaces__rs"
+	}
+}

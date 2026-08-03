@@ -1,0 +1,351 @@
+[0.000000] (-) TimerEvent: {}
+[0.000303] (my_first_interfaces) JobQueued: {'identifier': 'my_first_interfaces', 'dependencies': OrderedDict()}
+[0.000396] (my_first_pkg) JobQueued: {'identifier': 'my_first_pkg', 'dependencies': OrderedDict()}
+[0.000465] (my_first_interfaces) JobStarted: {'identifier': 'my_first_interfaces'}
+[0.009945] (my_first_pkg) JobStarted: {'identifier': 'my_first_pkg'}
+[0.027096] (my_first_interfaces) JobProgress: {'identifier': 'my_first_interfaces', 'progress': 'cmake'}
+[0.028366] (my_first_interfaces) Command: {'cmd': ['/usr/bin/cmake', '/home/relvixx/ros2_jazzy/src/my_first_interfaces', '-DCMAKE_INSTALL_PREFIX=/home/relvixx/ros2_jazzy/install/my_first_interfaces'], 'cwd': '/home/relvixx/ros2_jazzy/build/my_first_interfaces', 'env': OrderedDict({'USER': 'relvixx', 'XDG_SESSION_TYPE': 'x11', 'CLUTTER_DISABLE_MIPMAPPED_TEXT': '1', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/opt/ros/jazzy/opt/rviz_ogre_vendor/lib:/opt/ros/jazzy/lib/x86_64-linux-gnu:/opt/ros/jazzy/opt/gz_math_vendor/lib:/opt/ros/jazzy/opt/gz_utils_vendor/lib:/opt/ros/jazzy/opt/gz_cmake_vendor/lib:/opt/ros/jazzy/lib', 'HOME': '/home/relvixx', 'OLDPWD': '/home/relvixx/ros2_jazzy/src/my_first_interfaces', 'LESS': '-R', 'DESKTOP_SESSION': 'ubuntu', 'ZSH': '/home/relvixx/.oh-my-zsh', 'LSCOLORS': 'Gxfxcxdxbxegedabagacad', 'GTK_MODULES': 'gail:atk-bridge', 'GNOME_SHELL_SESSION_MODE': 'ubuntu', 'PAGER': 'less', 'ROS_PYTHON_VERSION': '3', 'SYSTEMD_EXEC_PID': '2916', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'GSM_SKIP_SSH_AGENT_WORKAROUND': 'true', 'COLORTERM': 'truecolor', 'DEBUGINFOD_URLS': 'https://debuginfod.ubuntu.com', 'ROS_DISTRO': 'jazzy', 'LOGNAME': 'relvixx', '_': '/usr/bin/colcon', 'MEMORY_PRESSURE_WATCH': '/sys/fs/cgroup/user.slice/user-1000.slice/user@1000.service/session.slice/org.gnome.Shell@x11.service/memory.pressure', 'XDG_SESSION_CLASS': 'user', 'ROS_VERSION': '2', 'USERNAME': 'relvixx', 'TERM': 'xterm-256color', 'GNOME_DESKTOP_SESSION_ID': 'this-is-deprecated', 'WINDOWPATH': '2', 'PATH': '/opt/ros/jazzy/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin', 'SESSION_MANAGER': 'local/relvixx-Nitro-ANV15-41:@/tmp/.ICE-unix/2872,unix/relvixx-Nitro-ANV15-41:/tmp/.ICE-unix/2872', 'GNOME_TERMINAL_SCREEN': '/org/gnome/Terminal/screen/3ea81627_ebd7_412c_9977_4d205b9a2e54', 'XDG_MENU_PREFIX': 'gnome-', 'XDG_RUNTIME_DIR': '/run/user/1000', 'DISPLAY': ':1', 'XDG_CURRENT_DESKTOP': 'ubuntu:GNOME', 'LANG': 'en_US.UTF-8', 'XDG_SESSION_DESKTOP': 'ubuntu', 'GNOME_TERMINAL_SERVICE': ':1.203', 'XMODIFIERS': '@im=ibus', 'XAUTHORITY': '/run/user/1000/gdm/Xauthority', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=00:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.avif=01;35:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:*~=00;90:*#=00;90:*.bak=00;90:*.crdownload=00;90:*.dpkg-dist=00;90:*.dpkg-new=00;90:*.dpkg-old=00;90:*.dpkg-tmp=00;90:*.old=00;90:*.orig=00;90:*.part=00;90:*.rej=00;90:*.rpmnew=00;90:*.rpmorig=00;90:*.rpmsave=00;90:*.swp=00;90:*.tmp=00;90:*.ucf-dist=00;90:*.ucf-new=00;90:*.ucf-old=00;90:', 'SSH_AUTH_SOCK': '/run/user/1000/keyring/ssh', 'AMENT_PREFIX_PATH': '/opt/ros/jazzy', 'SHELL': '/usr/bin/zsh', 'QT_ACCESSIBILITY': '1', 'GDMSESSION': 'ubuntu', 'GPG_AGENT_INFO': '/run/user/1000/gnupg/S.gpg-agent:0:1', 'QT_IM_MODULE': 'ibus', 'ROS_AUTOMATIC_DISCOVERY_RANGE': 'SUBNET', 'LC_ALL': 'en_US.UTF-8', 'PWD': '/home/relvixx/ros2_jazzy/build/my_first_interfaces', 'XDG_DATA_DIRS': '/usr/share/ubuntu:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop', 'XDG_CONFIG_DIRS': '/etc/xdg/xdg-ubuntu:/etc/xdg', 'PYTHONPATH': '/opt/ros/jazzy/lib/python3.12/site-packages', 'COLCON': '1', 'MEMORY_PRESSURE_WRITE': 'c29tZSAyMDAwMDAgMjAwMDAwMAA=', 'VTE_VERSION': '7600', 'CMAKE_PREFIX_PATH': '/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/opt/ros/jazzy'}), 'shell': False}
+[0.098646] (-) TimerEvent: {}
+[0.133633] (my_first_interfaces) StdoutLine: {'line': b'-- The C compiler identification is GNU 13.3.0\n'}
+[0.198883] (-) TimerEvent: {}
+[0.231497] (my_first_interfaces) StdoutLine: {'line': b'-- The CXX compiler identification is GNU 13.3.0\n'}
+[0.261441] (my_first_interfaces) StdoutLine: {'line': b'-- Detecting C compiler ABI info\n'}
+[0.299035] (-) TimerEvent: {}
+[0.399532] (-) TimerEvent: {}
+[0.442826] (my_first_interfaces) StdoutLine: {'line': b'-- Detecting C compiler ABI info - done\n'}
+[0.460051] (my_first_interfaces) StdoutLine: {'line': b'-- Check for working C compiler: /usr/bin/cc - skipped\n'}
+[0.460591] (my_first_interfaces) StdoutLine: {'line': b'-- Detecting C compile features\n'}
+[0.461309] (my_first_interfaces) StdoutLine: {'line': b'-- Detecting C compile features - done\n'}
+[0.479605] (my_first_interfaces) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info\n'}
+[0.499702] (-) TimerEvent: {}
+[0.600213] (-) TimerEvent: {}
+[0.672235] (my_first_interfaces) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info - done\n'}
+[0.689589] (my_first_interfaces) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/bin/c++ - skipped\n'}
+[0.690197] (my_first_interfaces) StdoutLine: {'line': b'-- Detecting CXX compile features\n'}
+[0.691082] (my_first_interfaces) StdoutLine: {'line': b'-- Detecting CXX compile features - done\n'}
+[0.697792] (my_first_interfaces) StdoutLine: {'line': b'-- Found ament_cmake: 2.5.6 (/opt/ros/jazzy/share/ament_cmake/cmake)\n'}
+[0.700334] (-) TimerEvent: {}
+[0.800674] (-) TimerEvent: {}
+[0.901171] (-) TimerEvent: {}
+[0.953540] (my_first_interfaces) StdoutLine: {'line': b'-- Found Python3: /usr/bin/python3 (found version "3.12.3") found components: Interpreter \n'}
+[1.001294] (-) TimerEvent: {}
+[1.101775] (-) TimerEvent: {}
+[1.133489] (my_first_interfaces) StdoutLine: {'line': b'-- Found rosidl_default_generators: 1.6.1 (/opt/ros/jazzy/share/rosidl_default_generators/cmake)\n'}
+[1.141258] (my_first_interfaces) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[1.201817] (-) TimerEvent: {}
+[1.219178] (my_first_interfaces) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[1.269636] (my_first_interfaces) StdoutLine: {'line': b'-- Found rosidl_adapter: 4.6.9 (/opt/ros/jazzy/share/rosidl_adapter/cmake)\n'}
+[1.301909] (-) TimerEvent: {}
+[1.365689] (my_first_pkg) Command: {'cmd': ['/usr/bin/python3', '-W', 'ignore:setup.py install is deprecated', '-W', 'ignore:easy_install command is deprecated', 'setup.py', 'egg_info', '--egg-base', '../../build/my_first_pkg', 'build', '--build-base', '/home/relvixx/ros2_jazzy/build/my_first_pkg/build', 'install', '--record', '/home/relvixx/ros2_jazzy/build/my_first_pkg/install.log', '--install-scripts', '$base/lib/my_first_pkg', '--single-version-externally-managed', 'install_data'], 'cwd': '/home/relvixx/ros2_jazzy/src/my_first_pkg', 'env': {'USER': 'relvixx', 'XDG_SESSION_TYPE': 'x11', 'CLUTTER_DISABLE_MIPMAPPED_TEXT': '1', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/opt/ros/jazzy/opt/rviz_ogre_vendor/lib:/opt/ros/jazzy/lib/x86_64-linux-gnu:/opt/ros/jazzy/opt/gz_math_vendor/lib:/opt/ros/jazzy/opt/gz_utils_vendor/lib:/opt/ros/jazzy/opt/gz_cmake_vendor/lib:/opt/ros/jazzy/lib', 'HOME': '/home/relvixx', 'OLDPWD': '/home/relvixx/ros2_jazzy/src/my_first_interfaces', 'LESS': '-R', 'DESKTOP_SESSION': 'ubuntu', 'ZSH': '/home/relvixx/.oh-my-zsh', 'LSCOLORS': 'Gxfxcxdxbxegedabagacad', 'GTK_MODULES': 'gail:atk-bridge', 'GNOME_SHELL_SESSION_MODE': 'ubuntu', 'PAGER': 'less', 'ROS_PYTHON_VERSION': '3', 'SYSTEMD_EXEC_PID': '2916', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'GSM_SKIP_SSH_AGENT_WORKAROUND': 'true', 'COLORTERM': 'truecolor', 'DEBUGINFOD_URLS': 'https://debuginfod.ubuntu.com', 'ROS_DISTRO': 'jazzy', 'LOGNAME': 'relvixx', '_': '/usr/bin/colcon', 'MEMORY_PRESSURE_WATCH': '/sys/fs/cgroup/user.slice/user-1000.slice/user@1000.service/session.slice/org.gnome.Shell@x11.service/memory.pressure', 'XDG_SESSION_CLASS': 'user', 'ROS_VERSION': '2', 'USERNAME': 'relvixx', 'TERM': 'xterm-256color', 'GNOME_DESKTOP_SESSION_ID': 'this-is-deprecated', 'WINDOWPATH': '2', 'PATH': '/opt/ros/jazzy/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin', 'SESSION_MANAGER': 'local/relvixx-Nitro-ANV15-41:@/tmp/.ICE-unix/2872,unix/relvixx-Nitro-ANV15-41:/tmp/.ICE-unix/2872', 'GNOME_TERMINAL_SCREEN': '/org/gnome/Terminal/screen/3ea81627_ebd7_412c_9977_4d205b9a2e54', 'XDG_MENU_PREFIX': 'gnome-', 'XDG_RUNTIME_DIR': '/run/user/1000', 'DISPLAY': ':1', 'XDG_CURRENT_DESKTOP': 'ubuntu:GNOME', 'LANG': 'en_US.UTF-8', 'XDG_SESSION_DESKTOP': 'ubuntu', 'GNOME_TERMINAL_SERVICE': ':1.203', 'XMODIFIERS': '@im=ibus', 'XAUTHORITY': '/run/user/1000/gdm/Xauthority', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=00:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.avif=01;35:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:*~=00;90:*#=00;90:*.bak=00;90:*.crdownload=00;90:*.dpkg-dist=00;90:*.dpkg-new=00;90:*.dpkg-old=00;90:*.dpkg-tmp=00;90:*.old=00;90:*.orig=00;90:*.part=00;90:*.rej=00;90:*.rpmnew=00;90:*.rpmorig=00;90:*.rpmsave=00;90:*.swp=00;90:*.tmp=00;90:*.ucf-dist=00;90:*.ucf-new=00;90:*.ucf-old=00;90:', 'SSH_AUTH_SOCK': '/run/user/1000/keyring/ssh', 'AMENT_PREFIX_PATH': '/opt/ros/jazzy', 'SHELL': '/usr/bin/zsh', 'QT_ACCESSIBILITY': '1', 'GDMSESSION': 'ubuntu', 'GPG_AGENT_INFO': '/run/user/1000/gnupg/S.gpg-agent:0:1', 'QT_IM_MODULE': 'ibus', 'ROS_AUTOMATIC_DISCOVERY_RANGE': 'SUBNET', 'LC_ALL': 'en_US.UTF-8', 'PWD': '/home/relvixx/ros2_jazzy/build/my_first_pkg', 'XDG_DATA_DIRS': '/usr/share/ubuntu:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop', 'XDG_CONFIG_DIRS': '/etc/xdg/xdg-ubuntu:/etc/xdg', 'PYTHONPATH': '/home/relvixx/ros2_jazzy/build/my_first_pkg/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/relvixx/ros2_jazzy/install/my_first_pkg/lib/python3.12/site-packages:/opt/ros/jazzy/lib/python3.12/site-packages', 'COLCON': '1', 'MEMORY_PRESSURE_WRITE': 'c29tZSAyMDAwMDAgMjAwMDAwMAA=', 'VTE_VERSION': '7600', 'CMAKE_PREFIX_PATH': '/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor'}, 'shell': False}
+[1.402032] (-) TimerEvent: {}
+[1.502366] (-) TimerEvent: {}
+[1.573534] (my_first_pkg) StdoutLine: {'line': b'running egg_info\n'}
+[1.589307] (my_first_pkg) StdoutLine: {'line': b'writing ../../build/my_first_pkg/my_first_pkg.egg-info/PKG-INFO\n'}
+[1.589622] (my_first_pkg) StdoutLine: {'line': b'writing dependency_links to ../../build/my_first_pkg/my_first_pkg.egg-info/dependency_links.txt\n'}
+[1.589867] (my_first_pkg) StdoutLine: {'line': b'writing entry points to ../../build/my_first_pkg/my_first_pkg.egg-info/entry_points.txt\n'}
+[1.590044] (my_first_pkg) StdoutLine: {'line': b'writing requirements to ../../build/my_first_pkg/my_first_pkg.egg-info/requires.txt\n'}
+[1.590121] (my_first_pkg) StdoutLine: {'line': b'writing top-level names to ../../build/my_first_pkg/my_first_pkg.egg-info/top_level.txt\n'}
+[1.602471] (-) TimerEvent: {}
+[1.621999] (my_first_pkg) StdoutLine: {'line': b"reading manifest file '../../build/my_first_pkg/my_first_pkg.egg-info/SOURCES.txt'\n"}
+[1.622575] (my_first_pkg) StdoutLine: {'line': b"writing manifest file '../../build/my_first_pkg/my_first_pkg.egg-info/SOURCES.txt'\n"}
+[1.622900] (my_first_pkg) StdoutLine: {'line': b'running build\n'}
+[1.623119] (my_first_pkg) StdoutLine: {'line': b'running build_py\n'}
+[1.623291] (my_first_pkg) StdoutLine: {'line': b'running install\n'}
+[1.627770] (my_first_pkg) StdoutLine: {'line': b'running install_lib\n'}
+[1.644014] (my_first_pkg) StdoutLine: {'line': b'running install_data\n'}
+[1.644406] (my_first_pkg) StdoutLine: {'line': b'running install_egg_info\n'}
+[1.660517] (my_first_pkg) StdoutLine: {'line': b"removing '/home/relvixx/ros2_jazzy/install/my_first_pkg/lib/python3.12/site-packages/my_first_pkg-0.0.0-py3.12.egg-info' (and everything under it)\n"}
+[1.660945] (my_first_pkg) StdoutLine: {'line': b'Copying ../../build/my_first_pkg/my_first_pkg.egg-info to /home/relvixx/ros2_jazzy/install/my_first_pkg/lib/python3.12/site-packages/my_first_pkg-0.0.0-py3.12.egg-info\n'}
+[1.661706] (my_first_pkg) StdoutLine: {'line': b'running install_scripts\n'}
+[1.702592] (-) TimerEvent: {}
+[1.768647] (my_first_pkg) StdoutLine: {'line': b'Installing add_two_ints_client script to /home/relvixx/ros2_jazzy/install/my_first_pkg/lib/my_first_pkg\n'}
+[1.769019] (my_first_pkg) StdoutLine: {'line': b'Installing add_two_ints_server script to /home/relvixx/ros2_jazzy/install/my_first_pkg/lib/my_first_pkg\n'}
+[1.769184] (my_first_pkg) StdoutLine: {'line': b'Installing publisher_node script to /home/relvixx/ros2_jazzy/install/my_first_pkg/lib/my_first_pkg\n'}
+[1.769423] (my_first_pkg) StdoutLine: {'line': b'Installing simple_node script to /home/relvixx/ros2_jazzy/install/my_first_pkg/lib/my_first_pkg\n'}
+[1.769557] (my_first_pkg) StdoutLine: {'line': b'Installing subscriber_node script to /home/relvixx/ros2_jazzy/install/my_first_pkg/lib/my_first_pkg\n'}
+[1.769683] (my_first_pkg) StdoutLine: {'line': b"writing list of installed files to '/home/relvixx/ros2_jazzy/build/my_first_pkg/install.log'\n"}
+[1.795816] (my_first_pkg) CommandEnded: {'returncode': 0}
+[1.801687] (my_first_interfaces) StdoutLine: {'line': b'-- Found ament_cmake_ros: 0.12.1 (/opt/ros/jazzy/share/ament_cmake_ros/cmake)\n'}
+[1.802695] (-) TimerEvent: {}
+[1.804132] (my_first_pkg) JobEnded: {'identifier': 'my_first_pkg', 'rc': 0}
+[1.902801] (-) TimerEvent: {}
+[2.003064] (-) TimerEvent: {}
+[2.103368] (-) TimerEvent: {}
+[2.163405] (my_first_interfaces) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[2.203487] (-) TimerEvent: {}
+[2.303796] (-) TimerEvent: {}
+[2.404082] (-) TimerEvent: {}
+[2.504444] (-) TimerEvent: {}
+[2.604748] (-) TimerEvent: {}
+[2.632545] (my_first_interfaces) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[2.635483] (my_first_interfaces) StdoutLine: {'line': b'-- Found python_cmake_module: 0.11.1 (/opt/ros/jazzy/share/python_cmake_module/cmake)\n'}
+[2.704842] (-) TimerEvent: {}
+[2.750974] (my_first_interfaces) StdoutLine: {'line': b'-- Found PythonExtra: /usr/bin/python3  \n'}
+[2.804963] (-) TimerEvent: {}
+[2.905242] (-) TimerEvent: {}
+[3.005551] (-) TimerEvent: {}
+[3.099009] (my_first_interfaces) StdoutLine: {'line': b'-- Found Python3: /usr/bin/python3 (found version "3.12.3") found components: Interpreter Development NumPy Development.Module Development.Embed \n'}
+[3.105677] (-) TimerEvent: {}
+[3.153298] (my_first_interfaces) StdoutLine: {'line': b'-- Found Python3: /usr/bin/python3 (found version "3.12.3") found components: Interpreter \n'}
+[3.155516] (my_first_interfaces) StdoutLine: {'line': b'-- Found ament_lint_auto: 0.17.5 (/opt/ros/jazzy/share/ament_lint_auto/cmake)\n'}
+[3.171026] (my_first_interfaces) StdoutLine: {'line': b"-- Added test 'lint_cmake' to check CMake code style\n"}
+[3.172020] (my_first_interfaces) StdoutLine: {'line': b"-- Added test 'xmllint' to check XML markup files\n"}
+[3.174499] (my_first_interfaces) StdoutLine: {'line': b'-- Configuring done (3.1s)\n'}
+[3.205824] (-) TimerEvent: {}
+[3.206200] (my_first_interfaces) StdoutLine: {'line': b'-- Generating done (0.0s)\n'}
+[3.216176] (my_first_interfaces) StdoutLine: {'line': b'-- Build files have been written to: /home/relvixx/ros2_jazzy/build/my_first_interfaces\n'}
+[3.225880] (my_first_interfaces) CommandEnded: {'returncode': 0}
+[3.227074] (my_first_interfaces) JobProgress: {'identifier': 'my_first_interfaces', 'progress': 'build'}
+[3.227099] (my_first_interfaces) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/relvixx/ros2_jazzy/build/my_first_interfaces', '--', '-j12', '-l12'], 'cwd': '/home/relvixx/ros2_jazzy/build/my_first_interfaces', 'env': OrderedDict({'USER': 'relvixx', 'XDG_SESSION_TYPE': 'x11', 'CLUTTER_DISABLE_MIPMAPPED_TEXT': '1', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/opt/ros/jazzy/opt/rviz_ogre_vendor/lib:/opt/ros/jazzy/lib/x86_64-linux-gnu:/opt/ros/jazzy/opt/gz_math_vendor/lib:/opt/ros/jazzy/opt/gz_utils_vendor/lib:/opt/ros/jazzy/opt/gz_cmake_vendor/lib:/opt/ros/jazzy/lib', 'HOME': '/home/relvixx', 'OLDPWD': '/home/relvixx/ros2_jazzy/src/my_first_interfaces', 'LESS': '-R', 'DESKTOP_SESSION': 'ubuntu', 'ZSH': '/home/relvixx/.oh-my-zsh', 'LSCOLORS': 'Gxfxcxdxbxegedabagacad', 'GTK_MODULES': 'gail:atk-bridge', 'GNOME_SHELL_SESSION_MODE': 'ubuntu', 'PAGER': 'less', 'ROS_PYTHON_VERSION': '3', 'SYSTEMD_EXEC_PID': '2916', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'GSM_SKIP_SSH_AGENT_WORKAROUND': 'true', 'COLORTERM': 'truecolor', 'DEBUGINFOD_URLS': 'https://debuginfod.ubuntu.com', 'ROS_DISTRO': 'jazzy', 'LOGNAME': 'relvixx', '_': '/usr/bin/colcon', 'MEMORY_PRESSURE_WATCH': '/sys/fs/cgroup/user.slice/user-1000.slice/user@1000.service/session.slice/org.gnome.Shell@x11.service/memory.pressure', 'XDG_SESSION_CLASS': 'user', 'ROS_VERSION': '2', 'USERNAME': 'relvixx', 'TERM': 'xterm-256color', 'GNOME_DESKTOP_SESSION_ID': 'this-is-deprecated', 'WINDOWPATH': '2', 'PATH': '/opt/ros/jazzy/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin', 'SESSION_MANAGER': 'local/relvixx-Nitro-ANV15-41:@/tmp/.ICE-unix/2872,unix/relvixx-Nitro-ANV15-41:/tmp/.ICE-unix/2872', 'GNOME_TERMINAL_SCREEN': '/org/gnome/Terminal/screen/3ea81627_ebd7_412c_9977_4d205b9a2e54', 'XDG_MENU_PREFIX': 'gnome-', 'XDG_RUNTIME_DIR': '/run/user/1000', 'DISPLAY': ':1', 'XDG_CURRENT_DESKTOP': 'ubuntu:GNOME', 'LANG': 'en_US.UTF-8', 'XDG_SESSION_DESKTOP': 'ubuntu', 'GNOME_TERMINAL_SERVICE': ':1.203', 'XMODIFIERS': '@im=ibus', 'XAUTHORITY': '/run/user/1000/gdm/Xauthority', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=00:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.avif=01;35:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:*~=00;90:*#=00;90:*.bak=00;90:*.crdownload=00;90:*.dpkg-dist=00;90:*.dpkg-new=00;90:*.dpkg-old=00;90:*.dpkg-tmp=00;90:*.old=00;90:*.orig=00;90:*.part=00;90:*.rej=00;90:*.rpmnew=00;90:*.rpmorig=00;90:*.rpmsave=00;90:*.swp=00;90:*.tmp=00;90:*.ucf-dist=00;90:*.ucf-new=00;90:*.ucf-old=00;90:', 'SSH_AUTH_SOCK': '/run/user/1000/keyring/ssh', 'AMENT_PREFIX_PATH': '/opt/ros/jazzy', 'SHELL': '/usr/bin/zsh', 'QT_ACCESSIBILITY': '1', 'GDMSESSION': 'ubuntu', 'GPG_AGENT_INFO': '/run/user/1000/gnupg/S.gpg-agent:0:1', 'QT_IM_MODULE': 'ibus', 'ROS_AUTOMATIC_DISCOVERY_RANGE': 'SUBNET', 'LC_ALL': 'en_US.UTF-8', 'PWD': '/home/relvixx/ros2_jazzy/build/my_first_interfaces', 'XDG_DATA_DIRS': '/usr/share/ubuntu:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop', 'XDG_CONFIG_DIRS': '/etc/xdg/xdg-ubuntu:/etc/xdg', 'PYTHONPATH': '/opt/ros/jazzy/lib/python3.12/site-packages', 'COLCON': '1', 'MEMORY_PRESSURE_WRITE': 'c29tZSAyMDAwMDAgMjAwMDAwMAA=', 'VTE_VERSION': '7600', 'CMAKE_PREFIX_PATH': '/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/opt/ros/jazzy'}), 'shell': False}
+[3.273050] (my_first_interfaces) StdoutLine: {'line': b'[  5%] \x1b[34m\x1b[1mGenerating Rust code for ROS interfaces\x1b[0m\n'}
+[3.273358] (my_first_interfaces) StdoutLine: {'line': b'[  5%] \x1b[34m\x1b[1mGenerating type hashes for ROS interfaces\x1b[0m\n'}
+[3.280674] (my_first_interfaces) StdoutLine: {'line': b'[  5%] Built target ament_cmake_python_copy_my_first_interfaces\n'}
+[3.305941] (-) TimerEvent: {}
+[3.406263] (-) TimerEvent: {}
+[3.426489] (my_first_interfaces) StdoutLine: {'line': b'[  5%] Built target my_first_interfaces__rosidl_generator_type_description\n'}
+[3.436347] (my_first_interfaces) StdoutLine: {'line': b'[  8%] \x1b[34m\x1b[1mGenerating C code for ROS interfaces\x1b[0m\n'}
+[3.446852] (my_first_interfaces) StdoutLine: {'line': b'[ 11%] \x1b[34m\x1b[1mGenerating C++ code for ROS interfaces\x1b[0m\n'}
+[3.462371] (my_first_interfaces) StdoutLine: {'line': b'running egg_info\n'}
+[3.463561] (my_first_interfaces) StdoutLine: {'line': b'creating my_first_interfaces.egg-info\n'}
+[3.476165] (my_first_interfaces) StdoutLine: {'line': b'[ 11%] Built target my_first_interfaces__rs\n'}
+[3.492874] (my_first_interfaces) StdoutLine: {'line': b'writing my_first_interfaces.egg-info/PKG-INFO\n'}
+[3.493118] (my_first_interfaces) StdoutLine: {'line': b'writing dependency_links to my_first_interfaces.egg-info/dependency_links.txt\n'}
+[3.493233] (my_first_interfaces) StdoutLine: {'line': b'writing top-level names to my_first_interfaces.egg-info/top_level.txt\n'}
+[3.493334] (my_first_interfaces) StdoutLine: {'line': b"writing manifest file 'my_first_interfaces.egg-info/SOURCES.txt'\n"}
+[3.506360] (-) TimerEvent: {}
+[3.566106] (my_first_interfaces) StdoutLine: {'line': b"reading manifest file 'my_first_interfaces.egg-info/SOURCES.txt'\n"}
+[3.566489] (my_first_interfaces) StdoutLine: {'line': b"writing manifest file 'my_first_interfaces.egg-info/SOURCES.txt'\n"}
+[3.592824] (my_first_interfaces) StdoutLine: {'line': b'[ 11%] Built target ament_cmake_python_build_my_first_interfaces_egg\n'}
+[3.606429] (-) TimerEvent: {}
+[3.706635] (-) TimerEvent: {}
+[3.804528] (my_first_interfaces) StdoutLine: {'line': b'[ 14%] \x1b[32mBuilding C object CMakeFiles/my_first_interfaces__rosidl_generator_c.dir/rosidl_generator_c/my_first_interfaces/action/detail/fibonacci__description.c.o\x1b[0m\n'}
+[3.804890] (my_first_interfaces) StdoutLine: {'line': b'[ 14%] Built target my_first_interfaces__cpp\n'}
+[3.805040] (my_first_interfaces) StdoutLine: {'line': b'[ 20%] \x1b[32mBuilding C object CMakeFiles/my_first_interfaces__rosidl_generator_c.dir/rosidl_generator_c/my_first_interfaces/action/detail/fibonacci__type_support.c.o\x1b[0m\n'}
+[3.805174] (my_first_interfaces) StdoutLine: {'line': b'[ 20%] \x1b[32mBuilding C object CMakeFiles/my_first_interfaces__rosidl_generator_c.dir/rosidl_generator_c/my_first_interfaces/action/detail/fibonacci__functions.c.o\x1b[0m\n'}
+[3.806725] (-) TimerEvent: {}
+[3.906949] (-) TimerEvent: {}
+[3.926516] (my_first_interfaces) StdoutLine: {'line': b'[ 22%] \x1b[32m\x1b[1mLinking C shared library libmy_first_interfaces__rosidl_generator_c.so\x1b[0m\n'}
+[3.965085] (my_first_interfaces) StdoutLine: {'line': b'[ 22%] Built target my_first_interfaces__rosidl_generator_c\n'}
+[3.974808] (my_first_interfaces) StdoutLine: {'line': b'[ 40%] \x1b[34m\x1b[1mGenerating C introspection for ROS interfaces\x1b[0m\n'}
+[3.975031] (my_first_interfaces) StdoutLine: {'line': b'[ 40%] \x1b[34m\x1b[1mGenerating C++ introspection for ROS interfaces\x1b[0m\n'}
+[3.975129] (my_first_interfaces) StdoutLine: {'line': b'[ 40%] \x1b[34m\x1b[1mGenerating C++ type support for eProsima Fast-RTPS\x1b[0m\n'}
+[3.975211] (my_first_interfaces) StdoutLine: {'line': b'[ 40%] \x1b[34m\x1b[1mGenerating C type support for eProsima Fast-RTPS\x1b[0m\n'}
+[3.975294] (my_first_interfaces) StdoutLine: {'line': b'[ 40%] \x1b[34m\x1b[1mGenerating C type support dispatch for ROS interfaces\x1b[0m\n'}
+[3.975382] (my_first_interfaces) StdoutLine: {'line': b'[ 40%] \x1b[34m\x1b[1mGenerating C++ type support dispatch for ROS interfaces\x1b[0m\n'}
+[4.007042] (-) TimerEvent: {}
+[4.107288] (-) TimerEvent: {}
+[4.197369] (my_first_interfaces) StdoutLine: {'line': b'[ 42%] \x1b[32mBuilding CXX object CMakeFiles/my_first_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/my_first_interfaces/action/fibonacci__type_support.cpp.o\x1b[0m\n'}
+[4.207394] (-) TimerEvent: {}
+[4.222869] (my_first_interfaces) StdoutLine: {'line': b'[ 45%] \x1b[32mBuilding CXX object CMakeFiles/my_first_interfaces__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/my_first_interfaces/action/fibonacci__type_support.cpp.o\x1b[0m\n'}
+[4.251208] (my_first_interfaces) StdoutLine: {'line': b'[ 48%] \x1b[32m\x1b[1mLinking CXX shared library libmy_first_interfaces__rosidl_typesupport_c.so\x1b[0m\n'}
+[4.256138] (my_first_interfaces) StdoutLine: {'line': b'[ 51%] \x1b[32mBuilding CXX object CMakeFiles/my_first_interfaces__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/my_first_interfaces/action/detail/fibonacci__type_support.cpp.o\x1b[0m\n'}
+[4.275267] (my_first_interfaces) StdoutLine: {'line': b'[ 54%] \x1b[32mBuilding C object CMakeFiles/my_first_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/my_first_interfaces/action/detail/fibonacci__type_support.c.o\x1b[0m\n'}
+[4.290662] (my_first_interfaces) StdoutLine: {'line': b'[ 54%] Built target my_first_interfaces__rosidl_typesupport_c\n'}
+[4.307484] (-) TimerEvent: {}
+[4.407776] (-) TimerEvent: {}
+[4.419728] (my_first_interfaces) StdoutLine: {'line': b'[ 57%] \x1b[32mBuilding CXX object CMakeFiles/my_first_interfaces__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/my_first_interfaces/action/detail/dds_fastrtps/fibonacci__type_support.cpp.o\x1b[0m\n'}
+[4.434691] (my_first_interfaces) StdoutLine: {'line': b'[ 60%] \x1b[32m\x1b[1mLinking C shared library libmy_first_interfaces__rosidl_typesupport_introspection_c.so\x1b[0m\n'}
+[4.469503] (my_first_interfaces) StdoutLine: {'line': b'[ 60%] Built target my_first_interfaces__rosidl_typesupport_introspection_c\n'}
+[4.480581] (my_first_interfaces) StdoutLine: {'line': b'[ 62%] \x1b[32mBuilding CXX object CMakeFiles/my_first_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/my_first_interfaces/action/detail/fibonacci__type_support_c.cpp.o\x1b[0m\n'}
+[4.507888] (-) TimerEvent: {}
+[4.608224] (-) TimerEvent: {}
+[4.708589] (-) TimerEvent: {}
+[4.808956] (-) TimerEvent: {}
+[4.822130] (my_first_interfaces) StdoutLine: {'line': b'[ 65%] \x1b[32m\x1b[1mLinking CXX shared library libmy_first_interfaces__rosidl_typesupport_cpp.so\x1b[0m\n'}
+[4.909092] (-) TimerEvent: {}
+[4.985923] (my_first_interfaces) StdoutLine: {'line': b'[ 68%] \x1b[32m\x1b[1mLinking CXX shared library libmy_first_interfaces__rosidl_typesupport_introspection_cpp.so\x1b[0m\n'}
+[4.986281] (my_first_interfaces) StdoutLine: {'line': b'[ 68%] Built target my_first_interfaces__rosidl_typesupport_cpp\n'}
+[5.009224] (-) TimerEvent: {}
+[5.109570] (-) TimerEvent: {}
+[5.184285] (my_first_interfaces) StdoutLine: {'line': b'[ 68%] Built target my_first_interfaces__rosidl_typesupport_introspection_cpp\n'}
+[5.191218] (my_first_interfaces) StdoutLine: {'line': b'[ 71%] \x1b[32m\x1b[1mLinking CXX shared library libmy_first_interfaces__rosidl_typesupport_fastrtps_c.so\x1b[0m\n'}
+[5.209705] (-) TimerEvent: {}
+[5.238262] (my_first_interfaces) StdoutLine: {'line': b'[ 71%] Built target my_first_interfaces__rosidl_typesupport_fastrtps_c\n'}
+[5.310260] (-) TimerEvent: {}
+[5.410709] (-) TimerEvent: {}
+[5.511020] (-) TimerEvent: {}
+[5.550798] (my_first_interfaces) StdoutLine: {'line': b'[ 74%] \x1b[32m\x1b[1mLinking CXX shared library libmy_first_interfaces__rosidl_typesupport_fastrtps_cpp.so\x1b[0m\n'}
+[5.611146] (-) TimerEvent: {}
+[5.619492] (my_first_interfaces) StdoutLine: {'line': b'[ 74%] Built target my_first_interfaces__rosidl_typesupport_fastrtps_cpp\n'}
+[5.639230] (my_first_interfaces) StdoutLine: {'line': b'[ 74%] Built target my_first_interfaces\n'}
+[5.711361] (-) TimerEvent: {}
+[5.732999] (my_first_interfaces) StdoutLine: {'line': b'[ 77%] \x1b[34m\x1b[1mGenerating Python code for ROS interfaces\x1b[0m\n'}
+[5.811474] (-) TimerEvent: {}
+[5.911804] (-) TimerEvent: {}
+[6.012121] (-) TimerEvent: {}
+[6.112432] (-) TimerEvent: {}
+[6.199686] (my_first_interfaces) StdoutLine: {'line': b'[ 77%] Built target my_first_interfaces__py\n'}
+[6.212561] (-) TimerEvent: {}
+[6.220015] (my_first_interfaces) StdoutLine: {'line': b'[ 80%] \x1b[32mBuilding C object CMakeFiles/my_first_interfaces__rosidl_generator_py.dir/rosidl_generator_py/my_first_interfaces/action/_fibonacci_s.c.o\x1b[0m\n'}
+[6.312691] (-) TimerEvent: {}
+[6.413144] (-) TimerEvent: {}
+[6.445202] (my_first_interfaces) StdoutLine: {'line': b'[ 82%] \x1b[32m\x1b[1mLinking C shared library libmy_first_interfaces__rosidl_generator_py.so\x1b[0m\n'}
+[6.486582] (my_first_interfaces) StdoutLine: {'line': b'[ 82%] Built target my_first_interfaces__rosidl_generator_py\n'}
+[6.504816] (my_first_interfaces) StdoutLine: {'line': b'[ 88%] \x1b[32mBuilding C object CMakeFiles/my_first_interfaces_s__rosidl_typesupport_fastrtps_c.dir/rosidl_generator_py/my_first_interfaces/_my_first_interfaces_s.ep.rosidl_typesupport_fastrtps_c.c.o\x1b[0m\n'}
+[6.505244] (my_first_interfaces) StdoutLine: {'line': b'[ 88%] \x1b[32mBuilding C object CMakeFiles/my_first_interfaces_s__rosidl_typesupport_introspection_c.dir/rosidl_generator_py/my_first_interfaces/_my_first_interfaces_s.ep.rosidl_typesupport_introspection_c.c.o\x1b[0m\n'}
+[6.505509] (my_first_interfaces) StdoutLine: {'line': b'[ 91%] \x1b[32mBuilding C object CMakeFiles/my_first_interfaces_s__rosidl_typesupport_c.dir/rosidl_generator_py/my_first_interfaces/_my_first_interfaces_s.ep.rosidl_typesupport_c.c.o\x1b[0m\n'}
+[6.513253] (-) TimerEvent: {}
+[6.613959] (-) TimerEvent: {}
+[6.636902] (my_first_interfaces) StdoutLine: {'line': b'[100%] \x1b[32m\x1b[1mLinking C shared module rosidl_generator_py/my_first_interfaces/my_first_interfaces_s__rosidl_typesupport_introspection_c.so\x1b[0m\n'}
+[6.637260] (my_first_interfaces) StdoutLine: {'line': b'[100%] \x1b[32m\x1b[1mLinking C shared module rosidl_generator_py/my_first_interfaces/my_first_interfaces_s__rosidl_typesupport_fastrtps_c.so\x1b[0m\n'}
+[6.637510] (my_first_interfaces) StdoutLine: {'line': b'[100%] \x1b[32m\x1b[1mLinking C shared module rosidl_generator_py/my_first_interfaces/my_first_interfaces_s__rosidl_typesupport_c.so\x1b[0m\n'}
+[6.666497] (my_first_interfaces) StdoutLine: {'line': b'[100%] Built target my_first_interfaces_s__rosidl_typesupport_c\n'}
+[6.666792] (my_first_interfaces) StdoutLine: {'line': b'[100%] Built target my_first_interfaces_s__rosidl_typesupport_fastrtps_c\n'}
+[6.667292] (my_first_interfaces) StdoutLine: {'line': b'[100%] Built target my_first_interfaces_s__rosidl_typesupport_introspection_c\n'}
+[6.714140] (-) TimerEvent: {}
+[6.719405] (my_first_interfaces) CommandEnded: {'returncode': 0}
+[6.720077] (my_first_interfaces) JobProgress: {'identifier': 'my_first_interfaces', 'progress': 'install'}
+[6.728683] (my_first_interfaces) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/relvixx/ros2_jazzy/build/my_first_interfaces'], 'cwd': '/home/relvixx/ros2_jazzy/build/my_first_interfaces', 'env': OrderedDict({'USER': 'relvixx', 'XDG_SESSION_TYPE': 'x11', 'CLUTTER_DISABLE_MIPMAPPED_TEXT': '1', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/opt/ros/jazzy/opt/rviz_ogre_vendor/lib:/opt/ros/jazzy/lib/x86_64-linux-gnu:/opt/ros/jazzy/opt/gz_math_vendor/lib:/opt/ros/jazzy/opt/gz_utils_vendor/lib:/opt/ros/jazzy/opt/gz_cmake_vendor/lib:/opt/ros/jazzy/lib', 'HOME': '/home/relvixx', 'OLDPWD': '/home/relvixx/ros2_jazzy/src/my_first_interfaces', 'LESS': '-R', 'DESKTOP_SESSION': 'ubuntu', 'ZSH': '/home/relvixx/.oh-my-zsh', 'LSCOLORS': 'Gxfxcxdxbxegedabagacad', 'GTK_MODULES': 'gail:atk-bridge', 'GNOME_SHELL_SESSION_MODE': 'ubuntu', 'PAGER': 'less', 'ROS_PYTHON_VERSION': '3', 'SYSTEMD_EXEC_PID': '2916', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'GSM_SKIP_SSH_AGENT_WORKAROUND': 'true', 'COLORTERM': 'truecolor', 'DEBUGINFOD_URLS': 'https://debuginfod.ubuntu.com', 'ROS_DISTRO': 'jazzy', 'LOGNAME': 'relvixx', '_': '/usr/bin/colcon', 'MEMORY_PRESSURE_WATCH': '/sys/fs/cgroup/user.slice/user-1000.slice/user@1000.service/session.slice/org.gnome.Shell@x11.service/memory.pressure', 'XDG_SESSION_CLASS': 'user', 'ROS_VERSION': '2', 'USERNAME': 'relvixx', 'TERM': 'xterm-256color', 'GNOME_DESKTOP_SESSION_ID': 'this-is-deprecated', 'WINDOWPATH': '2', 'PATH': '/opt/ros/jazzy/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin', 'SESSION_MANAGER': 'local/relvixx-Nitro-ANV15-41:@/tmp/.ICE-unix/2872,unix/relvixx-Nitro-ANV15-41:/tmp/.ICE-unix/2872', 'GNOME_TERMINAL_SCREEN': '/org/gnome/Terminal/screen/3ea81627_ebd7_412c_9977_4d205b9a2e54', 'XDG_MENU_PREFIX': 'gnome-', 'XDG_RUNTIME_DIR': '/run/user/1000', 'DISPLAY': ':1', 'XDG_CURRENT_DESKTOP': 'ubuntu:GNOME', 'LANG': 'en_US.UTF-8', 'XDG_SESSION_DESKTOP': 'ubuntu', 'GNOME_TERMINAL_SERVICE': ':1.203', 'XMODIFIERS': '@im=ibus', 'XAUTHORITY': '/run/user/1000/gdm/Xauthority', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=00:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.avif=01;35:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:*~=00;90:*#=00;90:*.bak=00;90:*.crdownload=00;90:*.dpkg-dist=00;90:*.dpkg-new=00;90:*.dpkg-old=00;90:*.dpkg-tmp=00;90:*.old=00;90:*.orig=00;90:*.part=00;90:*.rej=00;90:*.rpmnew=00;90:*.rpmorig=00;90:*.rpmsave=00;90:*.swp=00;90:*.tmp=00;90:*.ucf-dist=00;90:*.ucf-new=00;90:*.ucf-old=00;90:', 'SSH_AUTH_SOCK': '/run/user/1000/keyring/ssh', 'AMENT_PREFIX_PATH': '/opt/ros/jazzy', 'SHELL': '/usr/bin/zsh', 'QT_ACCESSIBILITY': '1', 'GDMSESSION': 'ubuntu', 'GPG_AGENT_INFO': '/run/user/1000/gnupg/S.gpg-agent:0:1', 'QT_IM_MODULE': 'ibus', 'ROS_AUTOMATIC_DISCOVERY_RANGE': 'SUBNET', 'LC_ALL': 'en_US.UTF-8', 'PWD': '/home/relvixx/ros2_jazzy/build/my_first_interfaces', 'XDG_DATA_DIRS': '/usr/share/ubuntu:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop', 'XDG_CONFIG_DIRS': '/etc/xdg/xdg-ubuntu:/etc/xdg', 'PYTHONPATH': '/opt/ros/jazzy/lib/python3.12/site-packages', 'COLCON': '1', 'MEMORY_PRESSURE_WRITE': 'c29tZSAyMDAwMDAgMjAwMDAwMAA=', 'VTE_VERSION': '7600', 'CMAKE_PREFIX_PATH': '/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/opt/ros/jazzy'}), 'shell': False}
+[6.736012] (my_first_interfaces) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[6.808363] (my_first_interfaces) StdoutLine: {'line': b'-- Installing: /home/relvixx/ros2_jazzy/install/my_first_interfaces/share/ament_index/resource_index/rosidl_interfaces/my_first_interfaces\n'}
+[6.808720] (my_first_interfaces) StdoutLine: {'line': b'-- Installing: /home/relvixx/ros2_jazzy/install/my_first_interfaces/share/my_first_interfaces/action/Fibonacci.json\n'}
+[6.809073] (my_first_interfaces) StdoutLine: {'line': b'-- Installing: /home/relvixx/ros2_jazzy/install/my_first_interfaces/include/my_first_interfaces/my_first_interfaces\n'}
+[6.809491] (my_first_interfaces) StdoutLine: {'line': b'-- Installing: /home/relvixx/ros2_jazzy/install/my_first_interfaces/include/my_first_interfaces/my_first_interfaces/action\n'}
+[6.809676] (my_first_interfaces) StdoutLine: {'line': b'-- Installing: /home/relvixx/ros2_jazzy/install/my_first_interfaces/include/my_first_interfaces/my_first_interfaces/action/detail\n'}
+[6.809817] (my_first_interfaces) StdoutLine: {'line': b'-- Installing: /home/relvixx/ros2_jazzy/install/my_first_interfaces/include/my_first_interfaces/my_first_interfaces/action/detail/fibonacci__type_support.h\n'}
+[6.809920] (my_first_interfaces) StdoutLine: {'line': b'-- Installing: /home/relvixx/ros2_jazzy/install/my_first_interfaces/include/my_first_interfaces/my_first_interfaces/action/detail/fibonacci__functions.h\n'}
+[6.810035] (my_first_interfaces) StdoutLine: {'line': b'-- Installing: /home/relvixx/ros2_jazzy/install/my_first_interfaces/include/my_first_interfaces/my_first_interfaces/action/detail/fibonacci__functions.c\n'}
+[6.810152] (my_first_interfaces) StdoutLine: {'line': b'-- Installing: /home/relvixx/ros2_jazzy/install/my_first_interfaces/include/my_first_interfaces/my_first_interfaces/action/detail/fibonacci__struct.h\n'}
+[6.810260] (my_first_interfaces) StdoutLine: {'line': b'-- Installing: /home/relvixx/ros2_jazzy/install/my_first_interfaces/include/my_first_interfaces/my_first_interfaces/action/detail/fibonacci__type_support.c\n'}
+[6.810368] (my_first_interfaces) StdoutLine: {'line': b'-- Installing: /home/relvixx/ros2_jazzy/install/my_first_interfaces/include/my_first_interfaces/my_first_interfaces/action/detail/fibonacci__description.c\n'}
+[6.810511] (my_first_interfaces) StdoutLine: {'line': b'-- Installing: /home/relvixx/ros2_jazzy/install/my_first_interfaces/include/my_first_interfaces/my_first_interfaces/action/fibonacci.h\n'}
+[6.810627] (my_first_interfaces) StdoutLine: {'line': b'-- Installing: /home/relvixx/ros2_jazzy/install/my_first_interfaces/include/my_first_interfaces/my_first_interfaces/msg\n'}
+[6.810719] (my_first_interfaces) StdoutLine: {'line': b'-- Installing: /home/relvixx/ros2_jazzy/install/my_first_interfaces/include/my_first_interfaces/my_first_interfaces/msg/rosidl_generator_c__visibility_control.h\n'}
+[6.810819] (my_first_interfaces) StdoutLine: {'line': b'-- Installing: /home/relvixx/ros2_jazzy/install/my_first_interfaces/share/my_first_interfaces/environment/library_path.sh\n'}
+[6.810911] (my_first_interfaces) StdoutLine: {'line': b'-- Installing: /home/relvixx/ros2_jazzy/install/my_first_interfaces/share/my_first_interfaces/environment/library_path.dsv\n'}
+[6.811002] (my_first_interfaces) StdoutLine: {'line': b'-- Installing: /home/relvixx/ros2_jazzy/install/my_first_interfaces/lib/libmy_first_interfaces__rosidl_generator_c.so\n'}
+[6.811128] (my_first_interfaces) StdoutLine: {'line': b'-- Set non-toolchain portion of runtime path of "/home/relvixx/ros2_jazzy/install/my_first_interfaces/lib/libmy_first_interfaces__rosidl_generator_c.so" to ""\n'}
+[6.811240] (my_first_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/relvixx/ros2_jazzy/install/my_first_interfaces/include/my_first_interfaces/my_first_interfaces\n'}
+[6.811348] (my_first_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/relvixx/ros2_jazzy/install/my_first_interfaces/include/my_first_interfaces/my_first_interfaces/action\n'}
+[6.811437] (my_first_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/relvixx/ros2_jazzy/install/my_first_interfaces/include/my_first_interfaces/my_first_interfaces/action/detail\n'}
+[6.811531] (my_first_interfaces) StdoutLine: {'line': b'-- Installing: /home/relvixx/ros2_jazzy/install/my_first_interfaces/include/my_first_interfaces/my_first_interfaces/action/detail/fibonacci__rosidl_typesupport_fastrtps_c.h\n'}
+[6.811613] (my_first_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/relvixx/ros2_jazzy/install/my_first_interfaces/include/my_first_interfaces/my_first_interfaces/msg\n'}
+[6.811782] (my_first_interfaces) StdoutLine: {'line': b'-- Installing: /home/relvixx/ros2_jazzy/install/my_first_interfaces/include/my_first_interfaces/my_first_interfaces/msg/rosidl_typesupport_fastrtps_c__visibility_control.h\n'}
+[6.811874] (my_first_interfaces) StdoutLine: {'line': b'-- Installing: /home/relvixx/ros2_jazzy/install/my_first_interfaces/lib/libmy_first_interfaces__rosidl_typesupport_fastrtps_c.so\n'}
+[6.812003] (my_first_interfaces) StdoutLine: {'line': b'-- Set non-toolchain portion of runtime path of "/home/relvixx/ros2_jazzy/install/my_first_interfaces/lib/libmy_first_interfaces__rosidl_typesupport_fastrtps_c.so" to ""\n'}
+[6.812104] (my_first_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/relvixx/ros2_jazzy/install/my_first_interfaces/include/my_first_interfaces/my_first_interfaces\n'}
+[6.812199] (my_first_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/relvixx/ros2_jazzy/install/my_first_interfaces/include/my_first_interfaces/my_first_interfaces/action\n'}
+[6.812294] (my_first_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/relvixx/ros2_jazzy/install/my_first_interfaces/include/my_first_interfaces/my_first_interfaces/action/detail\n'}
+[6.812420] (my_first_interfaces) StdoutLine: {'line': b'-- Installing: /home/relvixx/ros2_jazzy/install/my_first_interfaces/include/my_first_interfaces/my_first_interfaces/action/detail/fibonacci__rosidl_typesupport_introspection_c.h\n'}
+[6.812517] (my_first_interfaces) StdoutLine: {'line': b'-- Installing: /home/relvixx/ros2_jazzy/install/my_first_interfaces/include/my_first_interfaces/my_first_interfaces/action/detail/fibonacci__type_support.c\n'}
+[6.812638] (my_first_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/relvixx/ros2_jazzy/install/my_first_interfaces/include/my_first_interfaces/my_first_interfaces/msg\n'}
+[6.812724] (my_first_interfaces) StdoutLine: {'line': b'-- Installing: /home/relvixx/ros2_jazzy/install/my_first_interfaces/include/my_first_interfaces/my_first_interfaces/msg/rosidl_typesupport_introspection_c__visibility_control.h\n'}
+[6.812825] (my_first_interfaces) StdoutLine: {'line': b'-- Installing: /home/relvixx/ros2_jazzy/install/my_first_interfaces/lib/libmy_first_interfaces__rosidl_typesupport_introspection_c.so\n'}
+[6.812937] (my_first_interfaces) StdoutLine: {'line': b'-- Set non-toolchain portion of runtime path of "/home/relvixx/ros2_jazzy/install/my_first_interfaces/lib/libmy_first_interfaces__rosidl_typesupport_introspection_c.so" to ""\n'}
+[6.813038] (my_first_interfaces) StdoutLine: {'line': b'-- Installing: /home/relvixx/ros2_jazzy/install/my_first_interfaces/lib/libmy_first_interfaces__rosidl_typesupport_c.so\n'}
+[6.813324] (my_first_interfaces) StdoutLine: {'line': b'-- Set non-toolchain portion of runtime path of "/home/relvixx/ros2_jazzy/install/my_first_interfaces/lib/libmy_first_interfaces__rosidl_typesupport_c.so" to ""\n'}
+[6.813451] (my_first_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/relvixx/ros2_jazzy/install/my_first_interfaces/include/my_first_interfaces/my_first_interfaces\n'}
+[6.813547] (my_first_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/relvixx/ros2_jazzy/install/my_first_interfaces/include/my_first_interfaces/my_first_interfaces/action\n'}
+[6.813640] (my_first_interfaces) StdoutLine: {'line': b'-- Installing: /home/relvixx/ros2_jazzy/install/my_first_interfaces/include/my_first_interfaces/my_first_interfaces/action/fibonacci.hpp\n'}
+[6.813748] (my_first_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/relvixx/ros2_jazzy/install/my_first_interfaces/include/my_first_interfaces/my_first_interfaces/action/detail\n'}
+[6.813892] (my_first_interfaces) StdoutLine: {'line': b'-- Installing: /home/relvixx/ros2_jazzy/install/my_first_interfaces/include/my_first_interfaces/my_first_interfaces/action/detail/fibonacci__traits.hpp\n'}
+[6.813995] (my_first_interfaces) StdoutLine: {'line': b'-- Installing: /home/relvixx/ros2_jazzy/install/my_first_interfaces/include/my_first_interfaces/my_first_interfaces/action/detail/fibonacci__struct.hpp\n'}
+[6.814091] (my_first_interfaces) StdoutLine: {'line': b'-- Installing: /home/relvixx/ros2_jazzy/install/my_first_interfaces/include/my_first_interfaces/my_first_interfaces/action/detail/fibonacci__type_support.hpp\n'}
+[6.814188] (-) TimerEvent: {}
+[6.814273] (my_first_interfaces) StdoutLine: {'line': b'-- Installing: /home/relvixx/ros2_jazzy/install/my_first_interfaces/include/my_first_interfaces/my_first_interfaces/action/detail/fibonacci__builder.hpp\n'}
+[6.814385] (my_first_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/relvixx/ros2_jazzy/install/my_first_interfaces/include/my_first_interfaces/my_first_interfaces/msg\n'}
+[6.814480] (my_first_interfaces) StdoutLine: {'line': b'-- Installing: /home/relvixx/ros2_jazzy/install/my_first_interfaces/include/my_first_interfaces/my_first_interfaces/msg/rosidl_generator_cpp__visibility_control.hpp\n'}
+[6.814590] (my_first_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/relvixx/ros2_jazzy/install/my_first_interfaces/include/my_first_interfaces/my_first_interfaces\n'}
+[6.814684] (my_first_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/relvixx/ros2_jazzy/install/my_first_interfaces/include/my_first_interfaces/my_first_interfaces/action\n'}
+[6.814805] (my_first_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/relvixx/ros2_jazzy/install/my_first_interfaces/include/my_first_interfaces/my_first_interfaces/action/detail\n'}
+[6.814896] (my_first_interfaces) StdoutLine: {'line': b'-- Installing: /home/relvixx/ros2_jazzy/install/my_first_interfaces/include/my_first_interfaces/my_first_interfaces/action/detail/dds_fastrtps\n'}
+[6.815044] (my_first_interfaces) StdoutLine: {'line': b'-- Installing: /home/relvixx/ros2_jazzy/install/my_first_interfaces/include/my_first_interfaces/my_first_interfaces/action/detail/fibonacci__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[6.815132] (my_first_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/relvixx/ros2_jazzy/install/my_first_interfaces/include/my_first_interfaces/my_first_interfaces/msg\n'}
+[6.815218] (my_first_interfaces) StdoutLine: {'line': b'-- Installing: /home/relvixx/ros2_jazzy/install/my_first_interfaces/include/my_first_interfaces/my_first_interfaces/msg/rosidl_typesupport_fastrtps_cpp__visibility_control.h\n'}
+[6.815306] (my_first_interfaces) StdoutLine: {'line': b'-- Installing: /home/relvixx/ros2_jazzy/install/my_first_interfaces/lib/libmy_first_interfaces__rosidl_typesupport_fastrtps_cpp.so\n'}
+[6.815508] (my_first_interfaces) StdoutLine: {'line': b'-- Set non-toolchain portion of runtime path of "/home/relvixx/ros2_jazzy/install/my_first_interfaces/lib/libmy_first_interfaces__rosidl_typesupport_fastrtps_cpp.so" to ""\n'}
+[6.815630] (my_first_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/relvixx/ros2_jazzy/install/my_first_interfaces/include/my_first_interfaces/my_first_interfaces\n'}
+[6.815732] (my_first_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/relvixx/ros2_jazzy/install/my_first_interfaces/include/my_first_interfaces/my_first_interfaces/action\n'}
+[6.815853] (my_first_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/relvixx/ros2_jazzy/install/my_first_interfaces/include/my_first_interfaces/my_first_interfaces/action/detail\n'}
+[6.815949] (my_first_interfaces) StdoutLine: {'line': b'-- Installing: /home/relvixx/ros2_jazzy/install/my_first_interfaces/include/my_first_interfaces/my_first_interfaces/action/detail/fibonacci__rosidl_typesupport_introspection_cpp.hpp\n'}
+[6.816070] (my_first_interfaces) StdoutLine: {'line': b'-- Installing: /home/relvixx/ros2_jazzy/install/my_first_interfaces/include/my_first_interfaces/my_first_interfaces/action/detail/fibonacci__type_support.cpp\n'}
+[6.816159] (my_first_interfaces) StdoutLine: {'line': b'-- Installing: /home/relvixx/ros2_jazzy/install/my_first_interfaces/lib/libmy_first_interfaces__rosidl_typesupport_introspection_cpp.so\n'}
+[6.816669] (my_first_interfaces) StdoutLine: {'line': b'-- Set non-toolchain portion of runtime path of "/home/relvixx/ros2_jazzy/install/my_first_interfaces/lib/libmy_first_interfaces__rosidl_typesupport_introspection_cpp.so" to ""\n'}
+[6.816819] (my_first_interfaces) StdoutLine: {'line': b'-- Installing: /home/relvixx/ros2_jazzy/install/my_first_interfaces/lib/libmy_first_interfaces__rosidl_typesupport_cpp.so\n'}
+[6.817288] (my_first_interfaces) StdoutLine: {'line': b'-- Set non-toolchain portion of runtime path of "/home/relvixx/ros2_jazzy/install/my_first_interfaces/lib/libmy_first_interfaces__rosidl_typesupport_cpp.so" to ""\n'}
+[6.817433] (my_first_interfaces) StdoutLine: {'line': b'-- Installing: /home/relvixx/ros2_jazzy/install/my_first_interfaces/share/my_first_interfaces/environment/pythonpath.sh\n'}
+[6.817567] (my_first_interfaces) StdoutLine: {'line': b'-- Installing: /home/relvixx/ros2_jazzy/install/my_first_interfaces/share/my_first_interfaces/environment/pythonpath.dsv\n'}
+[6.817691] (my_first_interfaces) StdoutLine: {'line': b'-- Installing: /home/relvixx/ros2_jazzy/install/my_first_interfaces/lib/python3.12/site-packages/my_first_interfaces-0.0.0-py3.12.egg-info\n'}
+[6.817825] (my_first_interfaces) StdoutLine: {'line': b'-- Installing: /home/relvixx/ros2_jazzy/install/my_first_interfaces/lib/python3.12/site-packages/my_first_interfaces-0.0.0-py3.12.egg-info/dependency_links.txt\n'}
+[6.817929] (my_first_interfaces) StdoutLine: {'line': b'-- Installing: /home/relvixx/ros2_jazzy/install/my_first_interfaces/lib/python3.12/site-packages/my_first_interfaces-0.0.0-py3.12.egg-info/SOURCES.txt\n'}
+[6.818053] (my_first_interfaces) StdoutLine: {'line': b'-- Installing: /home/relvixx/ros2_jazzy/install/my_first_interfaces/lib/python3.12/site-packages/my_first_interfaces-0.0.0-py3.12.egg-info/PKG-INFO\n'}
+[6.818176] (my_first_interfaces) StdoutLine: {'line': b'-- Installing: /home/relvixx/ros2_jazzy/install/my_first_interfaces/lib/python3.12/site-packages/my_first_interfaces-0.0.0-py3.12.egg-info/top_level.txt\n'}
+[6.818267] (my_first_interfaces) StdoutLine: {'line': b'-- Installing: /home/relvixx/ros2_jazzy/install/my_first_interfaces/lib/python3.12/site-packages/my_first_interfaces\n'}
+[6.818371] (my_first_interfaces) StdoutLine: {'line': b'-- Installing: /home/relvixx/ros2_jazzy/install/my_first_interfaces/lib/python3.12/site-packages/my_first_interfaces/my_first_interfaces_s__rosidl_typesupport_fastrtps_c.so\n'}
+[6.818480] (my_first_interfaces) StdoutLine: {'line': b'-- Installing: /home/relvixx/ros2_jazzy/install/my_first_interfaces/lib/python3.12/site-packages/my_first_interfaces/action\n'}
+[6.818589] (my_first_interfaces) StdoutLine: {'line': b'-- Installing: /home/relvixx/ros2_jazzy/install/my_first_interfaces/lib/python3.12/site-packages/my_first_interfaces/action/_fibonacci.py\n'}
+[6.818689] (my_first_interfaces) StdoutLine: {'line': b'-- Installing: /home/relvixx/ros2_jazzy/install/my_first_interfaces/lib/python3.12/site-packages/my_first_interfaces/action/__init__.py\n'}
+[6.818785] (my_first_interfaces) StdoutLine: {'line': b'-- Installing: /home/relvixx/ros2_jazzy/install/my_first_interfaces/lib/python3.12/site-packages/my_first_interfaces/action/_fibonacci_s.c\n'}
+[6.818888] (my_first_interfaces) StdoutLine: {'line': b'-- Installing: /home/relvixx/ros2_jazzy/install/my_first_interfaces/lib/python3.12/site-packages/my_first_interfaces/my_first_interfaces_s__rosidl_typesupport_introspection_c.so\n'}
+[6.818989] (my_first_interfaces) StdoutLine: {'line': b'-- Installing: /home/relvixx/ros2_jazzy/install/my_first_interfaces/lib/python3.12/site-packages/my_first_interfaces/_my_first_interfaces_s.ep.rosidl_typesupport_fastrtps_c.c\n'}
+[6.819115] (my_first_interfaces) StdoutLine: {'line': b'-- Installing: /home/relvixx/ros2_jazzy/install/my_first_interfaces/lib/python3.12/site-packages/my_first_interfaces/_my_first_interfaces_s.ep.rosidl_typesupport_introspection_c.c\n'}
+[6.819284] (my_first_interfaces) StdoutLine: {'line': b'-- Installing: /home/relvixx/ros2_jazzy/install/my_first_interfaces/lib/python3.12/site-packages/my_first_interfaces/_my_first_interfaces_s.ep.rosidl_typesupport_c.c\n'}
+[6.819447] (my_first_interfaces) StdoutLine: {'line': b'-- Installing: /home/relvixx/ros2_jazzy/install/my_first_interfaces/lib/python3.12/site-packages/my_first_interfaces/__init__.py\n'}
+[6.819580] (my_first_interfaces) StdoutLine: {'line': b'-- Installing: /home/relvixx/ros2_jazzy/install/my_first_interfaces/lib/python3.12/site-packages/my_first_interfaces/my_first_interfaces_s__rosidl_typesupport_c.so\n'}
+[6.855471] (my_first_interfaces) StdoutLine: {'line': b"Listing '/home/relvixx/ros2_jazzy/install/my_first_interfaces/lib/python3.12/site-packages/my_first_interfaces'...\n"}
+[6.855826] (my_first_interfaces) StdoutLine: {'line': b"Compiling '/home/relvixx/ros2_jazzy/install/my_first_interfaces/lib/python3.12/site-packages/my_first_interfaces/__init__.py'...\n"}
+[6.856105] (my_first_interfaces) StdoutLine: {'line': b"Listing '/home/relvixx/ros2_jazzy/install/my_first_interfaces/lib/python3.12/site-packages/my_first_interfaces/action'...\n"}
+[6.856272] (my_first_interfaces) StdoutLine: {'line': b"Compiling '/home/relvixx/ros2_jazzy/install/my_first_interfaces/lib/python3.12/site-packages/my_first_interfaces/action/__init__.py'...\n"}
+[6.856423] (my_first_interfaces) StdoutLine: {'line': b"Compiling '/home/relvixx/ros2_jazzy/install/my_first_interfaces/lib/python3.12/site-packages/my_first_interfaces/action/_fibonacci.py'...\n"}
+[6.860798] (my_first_interfaces) StdoutLine: {'line': b'-- Installing: /home/relvixx/ros2_jazzy/install/my_first_interfaces/lib/python3.12/site-packages/my_first_interfaces/my_first_interfaces_s__rosidl_typesupport_fastrtps_c.so\n'}
+[6.861439] (my_first_interfaces) StdoutLine: {'line': b'-- Set non-toolchain portion of runtime path of "/home/relvixx/ros2_jazzy/install/my_first_interfaces/lib/python3.12/site-packages/my_first_interfaces/my_first_interfaces_s__rosidl_typesupport_fastrtps_c.so" to ""\n'}
+[6.861664] (my_first_interfaces) StdoutLine: {'line': b'-- Installing: /home/relvixx/ros2_jazzy/install/my_first_interfaces/lib/python3.12/site-packages/my_first_interfaces/my_first_interfaces_s__rosidl_typesupport_introspection_c.so\n'}
+[6.862063] (my_first_interfaces) StdoutLine: {'line': b'-- Set non-toolchain portion of runtime path of "/home/relvixx/ros2_jazzy/install/my_first_interfaces/lib/python3.12/site-packages/my_first_interfaces/my_first_interfaces_s__rosidl_typesupport_introspection_c.so" to ""\n'}
+[6.862266] (my_first_interfaces) StdoutLine: {'line': b'-- Installing: /home/relvixx/ros2_jazzy/install/my_first_interfaces/lib/python3.12/site-packages/my_first_interfaces/my_first_interfaces_s__rosidl_typesupport_c.so\n'}
+[6.862714] (my_first_interfaces) StdoutLine: {'line': b'-- Set non-toolchain portion of runtime path of "/home/relvixx/ros2_jazzy/install/my_first_interfaces/lib/python3.12/site-packages/my_first_interfaces/my_first_interfaces_s__rosidl_typesupport_c.so" to ""\n'}
+[6.862986] (my_first_interfaces) StdoutLine: {'line': b'-- Installing: /home/relvixx/ros2_jazzy/install/my_first_interfaces/lib/libmy_first_interfaces__rosidl_generator_py.so\n'}
+[6.863262] (my_first_interfaces) StdoutLine: {'line': b'-- Set non-toolchain portion of runtime path of "/home/relvixx/ros2_jazzy/install/my_first_interfaces/lib/libmy_first_interfaces__rosidl_generator_py.so" to ""\n'}
+[6.863445] (my_first_interfaces) StdoutLine: {'line': b'-- Installing: /home/relvixx/ros2_jazzy/install/my_first_interfaces/share/ament_index/resource_index/rust_packages/my_first_interfaces\n'}
+[6.863627] (my_first_interfaces) StdoutLine: {'line': b'-- Installing: /home/relvixx/ros2_jazzy/install/my_first_interfaces/share/my_first_interfaces/rust\n'}
+[6.863724] (my_first_interfaces) StdoutLine: {'line': b'-- Installing: /home/relvixx/ros2_jazzy/install/my_first_interfaces/share/my_first_interfaces/rust/Cargo.toml\n'}
+[6.863835] (my_first_interfaces) StdoutLine: {'line': b'-- Installing: /home/relvixx/ros2_jazzy/install/my_first_interfaces/share/my_first_interfaces/rust/src\n'}
+[6.863892] (my_first_interfaces) StdoutLine: {'line': b'-- Installing: /home/relvixx/ros2_jazzy/install/my_first_interfaces/share/my_first_interfaces/rust/src/action.rs\n'}
+[6.863965] (my_first_interfaces) StdoutLine: {'line': b'-- Installing: /home/relvixx/ros2_jazzy/install/my_first_interfaces/share/my_first_interfaces/rust/src/action\n'}
+[6.864037] (my_first_interfaces) StdoutLine: {'line': b'-- Installing: /home/relvixx/ros2_jazzy/install/my_first_interfaces/share/my_first_interfaces/rust/src/action/rmw.rs\n'}
+[6.864161] (my_first_interfaces) StdoutLine: {'line': b'-- Installing: /home/relvixx/ros2_jazzy/install/my_first_interfaces/share/my_first_interfaces/rust/src/lib.rs\n'}
+[6.864265] (my_first_interfaces) StdoutLine: {'line': b'-- Installing: /home/relvixx/ros2_jazzy/install/my_first_interfaces/share/my_first_interfaces/rust/build.rs\n'}
+[6.864399] (my_first_interfaces) StdoutLine: {'line': b'-- Installing: /home/relvixx/ros2_jazzy/install/my_first_interfaces/share/my_first_interfaces/action/Fibonacci.idl\n'}
+[6.864527] (my_first_interfaces) StdoutLine: {'line': b'-- Installing: /home/relvixx/ros2_jazzy/install/my_first_interfaces/share/my_first_interfaces/action/Fibonacci.action\n'}
+[6.864697] (my_first_interfaces) StdoutLine: {'line': b'-- Installing: /home/relvixx/ros2_jazzy/install/my_first_interfaces/share/ament_index/resource_index/package_run_dependencies/my_first_interfaces\n'}
+[6.864892] (my_first_interfaces) StdoutLine: {'line': b'-- Installing: /home/relvixx/ros2_jazzy/install/my_first_interfaces/share/ament_index/resource_index/parent_prefix_path/my_first_interfaces\n'}
+[6.865023] (my_first_interfaces) StdoutLine: {'line': b'-- Installing: /home/relvixx/ros2_jazzy/install/my_first_interfaces/share/my_first_interfaces/environment/ament_prefix_path.sh\n'}
+[6.865149] (my_first_interfaces) StdoutLine: {'line': b'-- Installing: /home/relvixx/ros2_jazzy/install/my_first_interfaces/share/my_first_interfaces/environment/ament_prefix_path.dsv\n'}
+[6.865282] (my_first_interfaces) StdoutLine: {'line': b'-- Installing: /home/relvixx/ros2_jazzy/install/my_first_interfaces/share/my_first_interfaces/environment/path.sh\n'}
+[6.865384] (my_first_interfaces) StdoutLine: {'line': b'-- Installing: /home/relvixx/ros2_jazzy/install/my_first_interfaces/share/my_first_interfaces/environment/path.dsv\n'}
+[6.865510] (my_first_interfaces) StdoutLine: {'line': b'-- Installing: /home/relvixx/ros2_jazzy/install/my_first_interfaces/share/my_first_interfaces/local_setup.bash\n'}
+[6.865636] (my_first_interfaces) StdoutLine: {'line': b'-- Installing: /home/relvixx/ros2_jazzy/install/my_first_interfaces/share/my_first_interfaces/local_setup.sh\n'}
+[6.865763] (my_first_interfaces) StdoutLine: {'line': b'-- Installing: /home/relvixx/ros2_jazzy/install/my_first_interfaces/share/my_first_interfaces/local_setup.zsh\n'}
+[6.865899] (my_first_interfaces) StdoutLine: {'line': b'-- Installing: /home/relvixx/ros2_jazzy/install/my_first_interfaces/share/my_first_interfaces/local_setup.dsv\n'}
+[6.866024] (my_first_interfaces) StdoutLine: {'line': b'-- Installing: /home/relvixx/ros2_jazzy/install/my_first_interfaces/share/my_first_interfaces/package.dsv\n'}
+[6.866184] (my_first_interfaces) StdoutLine: {'line': b'-- Installing: /home/relvixx/ros2_jazzy/install/my_first_interfaces/share/ament_index/resource_index/packages/my_first_interfaces\n'}
+[6.866349] (my_first_interfaces) StdoutLine: {'line': b'-- Installing: /home/relvixx/ros2_jazzy/install/my_first_interfaces/share/my_first_interfaces/cmake/export_my_first_interfaces__rosidl_generator_cExport.cmake\n'}
+[6.866491] (my_first_interfaces) StdoutLine: {'line': b'-- Installing: /home/relvixx/ros2_jazzy/install/my_first_interfaces/share/my_first_interfaces/cmake/export_my_first_interfaces__rosidl_generator_cExport-noconfig.cmake\n'}
+[6.866634] (my_first_interfaces) StdoutLine: {'line': b'-- Installing: /home/relvixx/ros2_jazzy/install/my_first_interfaces/share/my_first_interfaces/cmake/export_my_first_interfaces__rosidl_typesupport_fastrtps_cExport.cmake\n'}
+[6.866776] (my_first_interfaces) StdoutLine: {'line': b'-- Installing: /home/relvixx/ros2_jazzy/install/my_first_interfaces/share/my_first_interfaces/cmake/export_my_first_interfaces__rosidl_typesupport_fastrtps_cExport-noconfig.cmake\n'}
+[6.866926] (my_first_interfaces) StdoutLine: {'line': b'-- Installing: /home/relvixx/ros2_jazzy/install/my_first_interfaces/share/my_first_interfaces/cmake/my_first_interfaces__rosidl_typesupport_introspection_cExport.cmake\n'}
+[6.867063] (my_first_interfaces) StdoutLine: {'line': b'-- Installing: /home/relvixx/ros2_jazzy/install/my_first_interfaces/share/my_first_interfaces/cmake/my_first_interfaces__rosidl_typesupport_introspection_cExport-noconfig.cmake\n'}
+[6.867203] (my_first_interfaces) StdoutLine: {'line': b'-- Installing: /home/relvixx/ros2_jazzy/install/my_first_interfaces/share/my_first_interfaces/cmake/my_first_interfaces__rosidl_typesupport_cExport.cmake\n'}
+[6.867338] (my_first_interfaces) StdoutLine: {'line': b'-- Installing: /home/relvixx/ros2_jazzy/install/my_first_interfaces/share/my_first_interfaces/cmake/my_first_interfaces__rosidl_typesupport_cExport-noconfig.cmake\n'}
+[6.867473] (my_first_interfaces) StdoutLine: {'line': b'-- Installing: /home/relvixx/ros2_jazzy/install/my_first_interfaces/share/my_first_interfaces/cmake/export_my_first_interfaces__rosidl_generator_cppExport.cmake\n'}
+[6.867617] (my_first_interfaces) StdoutLine: {'line': b'-- Installing: /home/relvixx/ros2_jazzy/install/my_first_interfaces/share/my_first_interfaces/cmake/export_my_first_interfaces__rosidl_typesupport_fastrtps_cppExport.cmake\n'}
+[6.867751] (my_first_interfaces) StdoutLine: {'line': b'-- Installing: /home/relvixx/ros2_jazzy/install/my_first_interfaces/share/my_first_interfaces/cmake/export_my_first_interfaces__rosidl_typesupport_fastrtps_cppExport-noconfig.cmake\n'}
+[6.867925] (my_first_interfaces) StdoutLine: {'line': b'-- Installing: /home/relvixx/ros2_jazzy/install/my_first_interfaces/share/my_first_interfaces/cmake/my_first_interfaces__rosidl_typesupport_introspection_cppExport.cmake\n'}
+[6.868136] (my_first_interfaces) StdoutLine: {'line': b'-- Installing: /home/relvixx/ros2_jazzy/install/my_first_interfaces/share/my_first_interfaces/cmake/my_first_interfaces__rosidl_typesupport_introspection_cppExport-noconfig.cmake\n'}
+[6.868306] (my_first_interfaces) StdoutLine: {'line': b'-- Installing: /home/relvixx/ros2_jazzy/install/my_first_interfaces/share/my_first_interfaces/cmake/my_first_interfaces__rosidl_typesupport_cppExport.cmake\n'}
+[6.868437] (my_first_interfaces) StdoutLine: {'line': b'-- Installing: /home/relvixx/ros2_jazzy/install/my_first_interfaces/share/my_first_interfaces/cmake/my_first_interfaces__rosidl_typesupport_cppExport-noconfig.cmake\n'}
+[6.868523] (my_first_interfaces) StdoutLine: {'line': b'-- Installing: /home/relvixx/ros2_jazzy/install/my_first_interfaces/share/my_first_interfaces/cmake/export_my_first_interfaces__rosidl_generator_pyExport.cmake\n'}
+[6.868617] (my_first_interfaces) StdoutLine: {'line': b'-- Installing: /home/relvixx/ros2_jazzy/install/my_first_interfaces/share/my_first_interfaces/cmake/export_my_first_interfaces__rosidl_generator_pyExport-noconfig.cmake\n'}
+[6.868780] (my_first_interfaces) StdoutLine: {'line': b'-- Installing: /home/relvixx/ros2_jazzy/install/my_first_interfaces/share/my_first_interfaces/cmake/rosidl_cmake-extras.cmake\n'}
+[6.868889] (my_first_interfaces) StdoutLine: {'line': b'-- Installing: /home/relvixx/ros2_jazzy/install/my_first_interfaces/share/my_first_interfaces/cmake/ament_cmake_export_dependencies-extras.cmake\n'}
+[6.869017] (my_first_interfaces) StdoutLine: {'line': b'-- Installing: /home/relvixx/ros2_jazzy/install/my_first_interfaces/share/my_first_interfaces/cmake/ament_cmake_export_include_directories-extras.cmake\n'}
+[6.869172] (my_first_interfaces) StdoutLine: {'line': b'-- Installing: /home/relvixx/ros2_jazzy/install/my_first_interfaces/share/my_first_interfaces/cmake/ament_cmake_export_libraries-extras.cmake\n'}
+[6.869316] (my_first_interfaces) StdoutLine: {'line': b'-- Installing: /home/relvixx/ros2_jazzy/install/my_first_interfaces/share/my_first_interfaces/cmake/ament_cmake_export_targets-extras.cmake\n'}
+[6.869428] (my_first_interfaces) StdoutLine: {'line': b'-- Installing: /home/relvixx/ros2_jazzy/install/my_first_interfaces/share/my_first_interfaces/cmake/rosidl_cmake_export_typesupport_targets-extras.cmake\n'}
+[6.869548] (my_first_interfaces) StdoutLine: {'line': b'-- Installing: /home/relvixx/ros2_jazzy/install/my_first_interfaces/share/my_first_interfaces/cmake/rosidl_cmake_export_typesupport_libraries-extras.cmake\n'}
+[6.869673] (my_first_interfaces) StdoutLine: {'line': b'-- Installing: /home/relvixx/ros2_jazzy/install/my_first_interfaces/share/my_first_interfaces/cmake/rosidl_cmake_aggregate_target-extras.cmake\n'}
+[6.869818] (my_first_interfaces) StdoutLine: {'line': b'-- Installing: /home/relvixx/ros2_jazzy/install/my_first_interfaces/share/my_first_interfaces/cmake/my_first_interfacesConfig.cmake\n'}
+[6.869927] (my_first_interfaces) StdoutLine: {'line': b'-- Installing: /home/relvixx/ros2_jazzy/install/my_first_interfaces/share/my_first_interfaces/cmake/my_first_interfacesConfig-version.cmake\n'}
+[6.870050] (my_first_interfaces) StdoutLine: {'line': b'-- Installing: /home/relvixx/ros2_jazzy/install/my_first_interfaces/share/my_first_interfaces/package.xml\n'}
+[6.872256] (my_first_interfaces) CommandEnded: {'returncode': 0}
+[6.900494] (my_first_interfaces) JobEnded: {'identifier': 'my_first_interfaces', 'rc': 0}
+[6.901045] (-) EventReactorShutdown: {}
