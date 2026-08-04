@@ -1,5 +1,1 @@
-int32 order
----
-int32[] sequence
----
-int32[] partial_sequence
+/home/relvixx/ros2_jazzy/src/my_first_interfaces/action/Fibonacci.action

@@ -1,12 +1,1 @@
-#![allow(non_camel_case_types)]
-#![allow(clippy::derive_partial_eq_without_eq)]
-#![allow(clippy::upper_case_acronyms)]
-
-
-
-#[path = "action.rs"]
-mod action_idiomatic;
-pub mod action {
-    pub use super::action_idiomatic::*;
-    pub mod rmw;
-}
+/home/relvixx/ros2_jazzy/build/my_first_interfaces/rosidl_generator_rs/my_first_interfaces/rust/src/lib.rs

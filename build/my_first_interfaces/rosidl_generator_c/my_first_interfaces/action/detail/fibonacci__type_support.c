@@ -4,9 +4,9 @@
 
 #include <string.h>
 
+#include "my_first_interfaces/action/detail/fibonacci__struct.h"
 #include "my_first_interfaces/action/detail/fibonacci__type_support.h"
 #include "rosidl_typesupport_interface/macros.h"
-#include "my_first_interfaces/action/detail/fibonacci__struct.h"
 #include "my_first_interfaces/action/detail/fibonacci__functions.h"
 
 #ifdef __cplusplus
