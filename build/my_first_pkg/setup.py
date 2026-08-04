@@ -1,1 +1,0 @@
-/home/relvixx/ros2_jazzy/src/my_first_pkg/setup.py

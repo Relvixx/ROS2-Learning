@@ -30,7 +30,7 @@ setup(
         'add_two_ints_server = my_first_pkg.add_two_ints_server:main',
         'add_two_ints_client = my_first_pkg.add_two_ints_client:main',
         'fibonacci_action_server = my_first_pkg.fibonacci_action_server:main',
-    
+        'fibonacci_action_client = my_first_pkg.fibonacci_action_client:main',
         ],
     },
 )
