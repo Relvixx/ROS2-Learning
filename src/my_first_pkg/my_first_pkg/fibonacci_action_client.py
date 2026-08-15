@@ -43,7 +43,7 @@ class FibonacciActionClient(Node):
 def main(args=None):
     rclpy.init(args=args)
     action_client = FibonacciActionClient()
-    action_client.send_goal(100)
+    action_client.send_goal(10)
     rclpy.spin(action_client)
 
 if __name__ == '__main__':
