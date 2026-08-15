@@ -1,0 +1,1 @@
+/home/relvixx/ros2_jazzy/build/my_first_interfaces/rosidl_generator_rs/my_first_interfaces/rust/src/lib.rs

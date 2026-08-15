@@ -1,0 +1,29 @@
+[0.894s] Invoking command in '/home/relvixx/ros2_jazzy/build/my_first_pkg': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/relvixx/ros2_jazzy/build/my_first_pkg/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/relvixx/ros2_jazzy/install/my_first_pkg/lib/python3.12/site-packages:/home/relvixx/ros2_jazzy/install/my_first_interfaces/lib/python3.12/site-packages:/home/relvixx/ros2_jazzy/install/my_first_pkg/lib/python3.12/site-packages:/opt/ros/jazzy/lib/python3.12/site-packages /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/relvixx/ros2_jazzy/build/my_first_pkg/build --no-deps symlink_data
+[1.142s] running develop
+[1.306s] running egg_info
+[1.306s] creating my_first_pkg.egg-info
+[1.322s] writing my_first_pkg.egg-info/PKG-INFO
+[1.322s] writing dependency_links to my_first_pkg.egg-info/dependency_links.txt
+[1.323s] writing entry points to my_first_pkg.egg-info/entry_points.txt
+[1.323s] writing requirements to my_first_pkg.egg-info/requires.txt
+[1.324s] writing top-level names to my_first_pkg.egg-info/top_level.txt
+[1.324s] writing manifest file 'my_first_pkg.egg-info/SOURCES.txt'
+[1.356s] reading manifest file 'my_first_pkg.egg-info/SOURCES.txt'
+[1.357s] writing manifest file 'my_first_pkg.egg-info/SOURCES.txt'
+[1.375s] running build_ext
+[1.375s] Creating /home/relvixx/ros2_jazzy/install/my_first_pkg/lib/python3.12/site-packages/my-first-pkg.egg-link (link to .)
+[1.375s] Installing add_two_ints_client script to /home/relvixx/ros2_jazzy/install/my_first_pkg/lib/my_first_pkg
+[1.376s] Installing add_two_ints_server script to /home/relvixx/ros2_jazzy/install/my_first_pkg/lib/my_first_pkg
+[1.376s] Installing fibonacci_action_server script to /home/relvixx/ros2_jazzy/install/my_first_pkg/lib/my_first_pkg
+[1.376s] Installing publisher_node script to /home/relvixx/ros2_jazzy/install/my_first_pkg/lib/my_first_pkg
+[1.376s] Installing simple_node script to /home/relvixx/ros2_jazzy/install/my_first_pkg/lib/my_first_pkg
+[1.376s] Installing subscriber_node script to /home/relvixx/ros2_jazzy/install/my_first_pkg/lib/my_first_pkg
+[1.377s] 
+[1.377s] Installed /home/relvixx/ros2_jazzy/build/my_first_pkg
+[1.377s] running symlink_data
+[1.377s] creating /home/relvixx/ros2_jazzy/install/my_first_pkg/share/ament_index
+[1.377s] creating /home/relvixx/ros2_jazzy/install/my_first_pkg/share/ament_index/resource_index
+[1.377s] creating /home/relvixx/ros2_jazzy/install/my_first_pkg/share/ament_index/resource_index/packages
+[1.377s] symbolically linking /home/relvixx/ros2_jazzy/build/my_first_pkg/resource/my_first_pkg -> /home/relvixx/ros2_jazzy/install/my_first_pkg/share/ament_index/resource_index/packages
+[1.377s] symbolically linking /home/relvixx/ros2_jazzy/build/my_first_pkg/package.xml -> /home/relvixx/ros2_jazzy/install/my_first_pkg/share/my_first_pkg
+[1.414s] Invoked command in '/home/relvixx/ros2_jazzy/build/my_first_pkg' returned '0': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/relvixx/ros2_jazzy/build/my_first_pkg/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/relvixx/ros2_jazzy/install/my_first_pkg/lib/python3.12/site-packages:/home/relvixx/ros2_jazzy/install/my_first_interfaces/lib/python3.12/site-packages:/home/relvixx/ros2_jazzy/install/my_first_pkg/lib/python3.12/site-packages:/opt/ros/jazzy/lib/python3.12/site-packages /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/relvixx/ros2_jazzy/build/my_first_pkg/build --no-deps symlink_data

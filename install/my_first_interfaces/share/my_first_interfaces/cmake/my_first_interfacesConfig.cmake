@@ -1,0 +1,1 @@
+/home/relvixx/ros2_jazzy/build/my_first_interfaces/ament_cmake_core/my_first_interfacesConfig.cmake

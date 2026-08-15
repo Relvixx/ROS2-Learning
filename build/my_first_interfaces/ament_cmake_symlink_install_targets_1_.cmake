@@ -1,0 +1,1 @@
+ament_cmake_symlink_install_targets("TARGET_FILES" "/home/relvixx/ros2_jazzy/build/my_first_interfaces/rosidl_generator_py/my_first_interfaces/my_first_interfaces_s__rosidl_typesupport_introspection_c.so" "TARGETS" "my_first_interfaces_s__rosidl_typesupport_introspection_c" "DESTINATION" "lib/python3.12/site-packages/my_first_interfaces")
