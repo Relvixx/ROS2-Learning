@@ -24,5 +24,7 @@ def main(args=None):
     rclpy.shutdown()
 
 
+print(node.publisher_)
+
 if __name__ == '__main__':
     main()
