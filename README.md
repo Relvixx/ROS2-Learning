@@ -52,6 +52,23 @@ sequenceDiagram
     Note over Client: Future Resolved
 ```
 
+### 3. Asynchronous Long-Running Actions
+For interruptible, goal-oriented tasks with progress feedback, the package implements an Action Server-Client pattern. The `Fibonacci` action computes Fibonacci sequences with real-time progress updates.
+
+```mermaid
+sequenceDiagram
+    participant Client as fibonacci_action_client
+    participant Server as fibonacci_action_server
+    
+    Client->>Server: Send Goal (order=10)
+    Server-->>Client: Goal Accepted (Goal Handle)
+    loop Feedback Loop
+        Server-->>Client: Feedback (partial_sequence=[0,1,1,2,3,...])
+    end
+    Server-->>Client: Result (sequence=[0,1,1,2,3,5,8,13,21,34])
+    Note over Client: Goal Completed
+```
+
 ---
 
 ## 🛠️ Tech Stack & Dependencies
@@ -124,6 +141,21 @@ ros2 run my_first_pkg add_two_ints_client
 > ros2 service call /add_two_ints example_interfaces/srv/AddTwoInts "{a: 5, b: 7}"
 > ```
 
+### Long-Running Asynchronous Actions
+Deploy the Fibonacci action server and client to demonstrate goal-oriented computation with real-time feedback.
+
+**Terminal 1 (Action Server):**
+```bash
+ros2 run my_first_pkg fibonacci_action_server
+```
+
+**Terminal 2 (Action Client):**
+```bash
+ros2 run my_first_pkg fibonacci_action_client
+```
+
+The action client will compute the Fibonacci sequence up to a specified order, with the server sending periodic feedback updates as it processes the computation.
+
 ---
 
 ## ⚙️ Advanced Configuration (DDS & Middleware)
@@ -157,17 +189,24 @@ colcon test-result --all --verbose
 
 ```text
 .
-├── package.xml                 # ROS 2 manifest (dependencies & metadata)
-├── setup.cfg                   # Python package directives
-├── setup.py                    # Entry point declarations (ros2 run)
+├── package.xml                       # ROS 2 manifest (dependencies & metadata)
+├── setup.cfg                         # Python package directives
+├── setup.py                          # Entry point declarations (ros2 run)
 ├── my_first_pkg/
 │   ├── __init__.py
-│   ├── add_two_ints_client.py  # Asynchronous client future-polling
-│   ├── add_two_ints_server.py  # Synchronous callback dispatcher
-│   ├── publisher_node.py       # Timer-driven state publishing
-│   ├── simple_node.py          # Minimal node lifecycle binding
-│   └── subscriber_node.py      # Event-driven callback consumption
-└── test/                       # Ament-compliant test scaffolding
+│   ├── add_two_ints_client.py        # Service client (async future-polling)
+│   ├── add_two_ints_server.py        # Service server (callback dispatcher)
+│   ├── publisher_node.py             # Timer-driven state publishing
+│   ├── simple_node.py                # Minimal node lifecycle binding
+│   ├── subscriber_node.py            # Event-driven callback consumption
+│   ├── fibonacci_action_server.py    # Action server (Fibonacci computation)
+│   └── fibonacci_action_client.py    # Action client (async goal tracking)
+├── my_first_interfaces/
+│   ├── action/
+│   │   └── Fibonacci.action          # Action interface (goal, result, feedback)
+│   ├── CMakeLists.txt
+│   └── package.xml
+└── test/                             # Ament-compliant test scaffolding
 ```
 </details>
 
@@ -175,14 +214,16 @@ colcon test-result --all --verbose
 
 ## 📉 Known Architectural Limitations
 
-1. **Static Topology**: Topic and service URIs (`/hello_topic`, `/add_two_ints`) are hardcoded. They currently lack parameterization via `rcl_interfaces` for dynamic remapping.
-2. **Blocking Callbacks**: The service server operates in a SingleThreadedExecutor. High-frequency client bursts may induce blocking. Future iterations will adopt `MultiThreadedExecutor` and `ReentrantCallbackGroup`.
+1. **Static Topology**: Topic, service, and action URIs (`/hello_topic`, `/add_two_ints`, `/fibonacci`) are hardcoded. They currently lack parameterization via `rcl_interfaces` for dynamic remapping.
+2. **Blocking Callbacks**: The service server and action server operate in a SingleThreadedExecutor. High-frequency client bursts may induce blocking. Future iterations will adopt `MultiThreadedExecutor` and `ReentrantCallbackGroup`.
+3. **Action Cancellation**: Current action implementations lack cancellation and goal preemption callbacks.
 
 ## 🛣️ Engineering Roadmap
 
 - [ ] **Launch Orchestration**: Integrate `launch_ros` to initialize both the publisher and subscriber synchronously from a single XML/Python entry point.
 - [ ] **Lifecycle Nodes**: Migrate standard `rclpy.node.Node` to `rclpy.lifecycle.Node` for managed state machine transitions (Unconfigured -> Inactive -> Active).
-- [ ] **Action Servers**: Implement long-running, interruptible goal tracking using ROS 2 Actions.
+- [x] **Action Servers**: Implemented long-running, interruptible goal tracking using ROS 2 Actions with the Fibonacci example.
+- [ ] **Enhanced Action Patterns**: Extend actions with cancellation callbacks and goal preemption handling.
 
 ---
 <div align="center">
