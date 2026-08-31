@@ -32,6 +32,7 @@ setup(
         'fibonacci_action_server = my_first_pkg.fibonacci_action_server:main',
         'fibonacci_action_client = my_first_pkg.fibonacci_action_client:main',
         'parameter_node = my_first_pkg.parameter_node:main',
+        'parameter_validation_node = my_first_pkg.parameter_validation_node:main',
         ],
     },
 )
