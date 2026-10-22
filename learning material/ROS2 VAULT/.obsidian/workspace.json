@@ -27,12 +27,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "00 Home/CLI Index.md",
+                "file": "01 Foundations/Python for ROS/Inheritance and super.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "CLI Index"
+              "title": "Inheritance and super"
             }
           }
         ],
@@ -205,11 +205,18 @@
   },
   "active": "75a913d1e525ccc6",
   "lastOpenFiles": [
-    "00 Home/Current Learning Position.md",
+    "01 Foundations/Python for ROS/Function Definition vs Invocation.md",
+    "01 Foundations/Python for ROS/main Function.md",
+    "01 Foundations/Python for ROS/Class vs Object.md",
+    "01 Foundations/Python for ROS/__name__ and __main__.md",
+    "00 Home/Study Path.md",
+    "00 Home/ROS 2 Home.md",
+    "00 Home/Object Index.md",
+    "00 Home/Link Audit.md",
     "00 Home/CLI Index.md",
+    "00 Home/Current Learning Position.md",
     "01 Foundations/ROS 2 Ecosystem.md",
     "01 Foundations/Package and Executable.md",
-    "00 Home/Link Audit.md",
     "README.md",
     "BATCH_07_README.md",
     "BATCH_02_README.md",
@@ -221,12 +228,6 @@
     "02 Nodes/Node Runtime Flow.md",
     "02 Nodes/First Node Anatomy.md",
     "23 Mistakes & Corrections/Node is not necessarily a Process.md",
-    "01 Foundations/Python for ROS/self.md",
-    "01 Foundations/Python for ROS/main Function.md",
-    "01 Foundations/Python for ROS/__name__ and __main__.md",
-    "01 Foundations/Python for ROS/Function Definition vs Invocation.md",
-    "01 Foundations/Python for ROS/Class vs Object.md",
-    "00 Home/Object Index.md",
-    "00 Home/ROS 2 Home.md"
+    "01 Foundations/Python for ROS/self.md"
   ]
 }
