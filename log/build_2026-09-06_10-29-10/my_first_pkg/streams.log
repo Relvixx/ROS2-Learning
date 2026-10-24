@@ -1,0 +1,27 @@
+[1.426s] Invoking command in '/home/relvixx/ros2_jazzy/build/my_first_pkg': AMENT_PREFIX_PATH=/home/relvixx/ros2_jazzy/install/my_first_interfaces:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/relvixx/ros2_jazzy/install/my_first_interfaces:${CMAKE_PREFIX_PATH} DEBUGINFOD_URLS=https://debuginfod.ubuntu.com LD_LIBRARY_PATH=/home/relvixx/ros2_jazzy/install/my_first_interfaces/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/relvixx/ros2_jazzy/build/my_first_pkg/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/relvixx/ros2_jazzy/install/my_first_pkg/lib/python3.12/site-packages:/home/relvixx/ros2_jazzy/install/my_first_interfaces/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/relvixx/ros2_jazzy/build/my_first_pkg/build --no-deps symlink_data
+[1.685s] running develop
+[1.863s] running egg_info
+[1.880s] writing my_first_pkg.egg-info/PKG-INFO
+[1.880s] writing dependency_links to my_first_pkg.egg-info/dependency_links.txt
+[1.881s] writing entry points to my_first_pkg.egg-info/entry_points.txt
+[1.881s] writing requirements to my_first_pkg.egg-info/requires.txt
+[1.881s] writing top-level names to my_first_pkg.egg-info/top_level.txt
+[1.916s] reading manifest file 'my_first_pkg.egg-info/SOURCES.txt'
+[1.917s] writing manifest file 'my_first_pkg.egg-info/SOURCES.txt'
+[1.935s] running build_ext
+[1.936s] Creating /home/relvixx/ros2_jazzy/install/my_first_pkg/lib/python3.12/site-packages/my-first-pkg.egg-link (link to .)
+[1.936s] Installing add_two_ints_client script to /home/relvixx/ros2_jazzy/install/my_first_pkg/lib/my_first_pkg
+[1.936s] Installing add_two_ints_server script to /home/relvixx/ros2_jazzy/install/my_first_pkg/lib/my_first_pkg
+[1.936s] Installing fibonacci_action_client script to /home/relvixx/ros2_jazzy/install/my_first_pkg/lib/my_first_pkg
+[1.937s] Installing fibonacci_action_server script to /home/relvixx/ros2_jazzy/install/my_first_pkg/lib/my_first_pkg
+[1.937s] Installing parameter_node script to /home/relvixx/ros2_jazzy/install/my_first_pkg/lib/my_first_pkg
+[1.937s] Installing parameter_validation_node script to /home/relvixx/ros2_jazzy/install/my_first_pkg/lib/my_first_pkg
+[1.937s] Installing publisher_node script to /home/relvixx/ros2_jazzy/install/my_first_pkg/lib/my_first_pkg
+[1.937s] Installing simple_node script to /home/relvixx/ros2_jazzy/install/my_first_pkg/lib/my_first_pkg
+[1.937s] Installing subscriber_node script to /home/relvixx/ros2_jazzy/install/my_first_pkg/lib/my_first_pkg
+[1.938s] 
+[1.938s] Installed /home/relvixx/ros2_jazzy/build/my_first_pkg
+[1.938s] running symlink_data
+[1.938s] creating /home/relvixx/ros2_jazzy/install/my_first_pkg/share/my_first_pkg/launch
+[1.938s] symbolically linking /home/relvixx/ros2_jazzy/build/my_first_pkg/launch/parameter.launch.py -> /home/relvixx/ros2_jazzy/install/my_first_pkg/share/my_first_pkg/launch
+[1.978s] Invoked command in '/home/relvixx/ros2_jazzy/build/my_first_pkg' returned '0': AMENT_PREFIX_PATH=/home/relvixx/ros2_jazzy/install/my_first_interfaces:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/relvixx/ros2_jazzy/install/my_first_interfaces:${CMAKE_PREFIX_PATH} DEBUGINFOD_URLS=https://debuginfod.ubuntu.com LD_LIBRARY_PATH=/home/relvixx/ros2_jazzy/install/my_first_interfaces/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/relvixx/ros2_jazzy/build/my_first_pkg/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/relvixx/ros2_jazzy/install/my_first_pkg/lib/python3.12/site-packages:/home/relvixx/ros2_jazzy/install/my_first_interfaces/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/relvixx/ros2_jazzy/build/my_first_pkg/build --no-deps symlink_data

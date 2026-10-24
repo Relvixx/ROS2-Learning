@@ -1,4 +1,4 @@
 {
     "wolf.disableHotModeWarning": true,
-    "cmake.sourceDirectory": "C:/Volume D/Robotics/ROS2-Learning/src/my_first_interfaces"
+    "cmake.sourceDirectory": "/home/relvixx/ros2_jazzy/src/my_first_interfaces"
 }
